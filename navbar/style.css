@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+    max-width: 100%;
+    transition: .7s;
+}
+/* body{
+    background-color: #000;
+} */
+header{
+    background-image: url();
+}
+
+.logo img {
+    width: 70px;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.button {
+    display: flex;
+    gap: 30px;
+}
+
+.btn2 {
+    padding: 10px 9px;
+    align-items: center;
+    border: 1.5px solid #d19b43;
+    width: 83px;
+    background: none;
+    outline: none;
+}
+.btn1 a{
+    font-size: 14px;
+}
+
+.btn2 a{
+    font-size: 14px;
+}
+
+.btn1 {
+    width: 83px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: linear-gradient(#6d4f1d 5%, #d19b43 100%);
+    /* background-color: #d19b43; */
+}
+
+.cnt-1 {
+    display: none;
+}
+
+.cnt-2 {
+    display: none;
+}
+
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.nav-links {
+    transition: 0.7s ease;
+}
+
+.hambuger {
+    display: none;
+    cursor: pointer;
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 923px) {
+    .hambuger {
+        display: block;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .hambuger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hambuger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hambuger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .cnt-2 {
+        display: block;
+        align-items: center;
+        border: 1.5px solid #FFF;
+        background: none;
+        padding: 10px 20px;
+        margin-top: -20px;
+    }
+    .cnt-1 {
+        display: block;
+        align-items: center;
+        border: none;
+        background: linear-gradient(#6d4f1d 5%, #d19b43 100%);
+        padding: 12px 26px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        height: 80vh;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 9rem;
+        padding-top: 2rem;
+        width: 100%;
+        text-align: right;
+        transition: 0.3s;
+        background-color: #000;
+    }
+
+    a {
+        margin-top: -30px;
+    }
+
+
+    .nav-items {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
