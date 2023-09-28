@@ -10,12 +10,10 @@
 /* body{
     background-color: #000;
 } */
-header{
-    background-image: url();
-}
+
 
 .logo img {
-    width: 70px;
+    width: 120px;
     padding: 10px;
 }
 
@@ -25,10 +23,10 @@ li {
 
 a {
     text-decoration: none;
-    color: #FFF;
+    color: #000;
     font-size: 14px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -46,11 +44,11 @@ a {
     outline: none;
 }
 .btn1 a{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .btn2 a{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .btn1 {
@@ -81,7 +79,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #000;
+    /* background-color: #000000fb; */
 }
 
 .nav-menu {
@@ -108,9 +106,16 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: #d19b43;
 }
 
+.banner{
+    background-image: url('img/banner\ image.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
 
 
 
@@ -161,7 +166,7 @@ a {
     .cnt-2 {
         display: block;
         align-items: center;
-        border: 1.5px solid #FFF;
+        border: 1.5px solid #d19b43;
         background: none;
         padding: 10px 20px;
         margin-top: -20px;
@@ -178,7 +183,7 @@ a {
         position: fixed;
         left: -100%;
         top: 70px;
-        height: 80vh;
+        height: 10vh;
         flex-direction: column;
         gap: 2rem;
         padding-bottom: 9rem;
@@ -186,7 +191,7 @@ a {
         width: 100%;
         text-align: right;
         transition: 0.3s;
-        background-color: #000;
+        /* background-color: #000; */
     }
 
     a {
