@@ -7,9 +7,11 @@
     max-width: 100%;
     transition: .7s;
 }
-/* body{
-    background-color: #000;
-} */
+
+body {
+    max-width: 100%;
+    min-width: 320px;
+}
 
 
 .logo img {
@@ -22,12 +24,17 @@ li {
 }
 
 a {
-    text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-family: Poppins;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d19b43;
 }
 
 .button {
@@ -38,16 +45,18 @@ a {
 .btn2 {
     padding: 10px 9px;
     align-items: center;
-    border: 1.5px solid #d19b43;
+    border: 1.5px solid #000000;
     width: 83px;
     background: none;
     outline: none;
+    border-radius: 3px;
 }
-.btn1 a{
+
+.btn1 a {
     font-size: 13px;
 }
 
-.btn2 a{
+.btn2 a {
     font-size: 13px;
 }
 
@@ -56,12 +65,23 @@ a {
     padding: 10px 15px;
     border: none;
     outline: none;
-    background: linear-gradient(#6d4f1d 5%, #d19b43 100%);
-    /* background-color: #d19b43; */
+    /* background: linear-gradient(#6d4f1d 5%, #d19b43 100%); */
+    background-color: #d19b43;
+    display: inline-flex;
+    border-radius: 3px;
+}
+
+.btn1 a {
+    color: #ffffff;
 }
 
 .cnt-1 {
     display: none;
+
+}
+
+.cnt-1 a {
+    color: #ffffff;
 }
 
 .cnt-2 {
@@ -70,7 +90,7 @@ a {
 
 
 .navbar {
-    min-height: 70px;
+    min-height: 97px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,6 +100,8 @@ a {
     width: 100%;
     z-index: 1;
     background-color: #ffffff;
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.062);
 }
 
 .nav-menu {
@@ -109,28 +131,191 @@ a {
     background-color: #d19b43;
 }
 
-.banner{
-    background-image: url('img/banner1.png');
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.banner {
+    margin-top: 250px;
 }
-.banner-text{
-    position: relative;
-    
+
+.banner-flex {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
 }
-.banner-text1 p{
-    color: #FFF;
-    text-align: center;
-    font-family: Red Hat Text;
+
+.banner-text1 svg {
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -7px;
+}
+
+.banner-text1 p {
+    color: rgba(0, 0, 0, 0.86);
+    font-family: Poppins;
     font-size: 21px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 450;
     line-height: normal;
 }
 
+.banner-text1 h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.banner-text1 button {
+    padding: 6px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background-color: #D19B43;
+    border: none;
+    margin-top: 20px;
+}
+
+.banner-text1 button a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.star {
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+.arrow {
+    margin-top: 50px;
+    margin-left: -100px;
+}
+
+.banner-image {
+    display: flex;
+}
+
+.ban-img img {
+    margin-top: 100px;
+    padding: 0px 10px;
+}
+
+.bg {
+    background-color: rgba(209, 155, 67, 0.11);
+    width: 1489px;
+    height: 188px;
+    flex-shrink: 0;
+    margin-top: 70px;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.About-txt h1 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 10px solid #d19b43;
+    width: 180px;
+}
+
+.About-txt h1 span {
+    color: #d19b43;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 10px solid #000;
+}
+
+.About-txt p {
+    color: #000;
+    font-family: 'Red Hat display';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+}
+
+.about-image img {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 70px 0px;
+    border: 5px solid #D19B43;
+}
+
+.section4-txt {
+    background-color: rgba(209, 155, 67, 0.11);
+    width: 400px;
+    height: 650px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    margin-top: 70px;
+}
+
+.section4-txt img {
+    border-radius: 15px;
+}
+
+.section4-txt h1 {
+    color: #000;
+    font-family: 'Red Hat display';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section4-txt p {
+    color: #000;
+    font-family: 'Red Hat display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section4-flex{
+    display: flex;
+}
 
 
 
@@ -163,20 +348,7 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 923px) {
+@media (max-width: 990px) {
     .hambuger {
         display: block;
     }
@@ -204,24 +376,28 @@ a {
     .cnt-2 {
         display: block;
         align-items: center;
-        border: 1.5px solid #d19b43;
+        border: 1.5px solid #000000;
         background: none;
         padding: 10px 20px;
         margin-top: -20px;
+        border-radius: 3px;
     }
+
     .cnt-1 {
         display: block;
         align-items: center;
         border: none;
-        background: linear-gradient(#6d4f1d 5%, #d19b43 100%);
+        /* background: linear-gradient(#6d4f1d 5%, #d19b43 100%); */
         padding: 12px 26px;
+        background-color: #d19b43;
+        border-radius: 3px;
     }
 
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
-        height: 10vh;
+        top: 80px;
+        height: 60vh;
         flex-direction: column;
         gap: 2rem;
         padding-bottom: 9rem;
@@ -229,11 +405,16 @@ a {
         width: 100%;
         text-align: right;
         transition: 0.3s;
-        /* background-color: #000; */
+        background-color: #ffffff;
     }
 
     a {
         margin-top: -30px;
+        color: #000;
+    }
+
+    a:hover {
+        color: #d19b43;
     }
 
 
