@@ -11,6 +11,7 @@
 body {
     max-width: 100%;
     min-width: 320px;
+    background-color: #F6FCFF;
 }
 
 
@@ -149,6 +150,24 @@ a:hover {
     margin-top: -7px;
 }
 
+.banner-text1 h5 {
+    color: rgba(209, 155, 67, 0.75);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    width: 140px;
+    padding: 10px 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 29px;
+    background: rgba(181, 57, 57, 0.10);
+    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+}
+
 .banner-text1 p {
     color: rgba(0, 0, 0, 0.86);
     font-family: Poppins;
@@ -156,6 +175,7 @@ a:hover {
     font-style: normal;
     font-weight: 450;
     line-height: normal;
+    padding-top: 15px;
 }
 
 .banner-text1 h1 {
@@ -186,14 +206,17 @@ a:hover {
 }
 
 .banner-text1 button {
-    padding: 6px 16px;
+    display: flex;
+    width: 128px;
+    height: 40px;
+    padding: 13px 16px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 3px;
     background-color: #D19B43;
     border: none;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .banner-text1 button a {
@@ -201,7 +224,7 @@ a:hover {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
@@ -227,60 +250,94 @@ a:hover {
 }
 
 .bg {
-    background-color: rgba(209, 155, 67, 0.11);
+    background: rgba(0, 0, 0, 0.02);
     width: 1489px;
-    height: 188px;
-    flex-shrink: 0;
+    height: 152px;
     margin-top: 70px;
+}
+
+.bg p {
+    color: rgba(209, 155, 67, 0.47);
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .about-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     margin-top: 70px;
 }
 
 .About-txt h1 {
     color: #000;
-    font-family: Poppins;
-    font-size: 40px;
+    font-family: Nunito;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 650;
     line-height: normal;
-    border-bottom: 10px solid #d19b43;
-    width: 180px;
+    letter-spacing: 0.24px;
 }
 
 .About-txt h1 span {
-    color: #d19b43;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-bottom: 10px solid #000;
+    color: #000;
+font-family: Nunito;
+font-size: 24px;
+font-style: normal;
+font-weight: 650;
+line-height: normal;
+letter-spacing: 0.24px;
+text-decoration-line: underline;
 }
 
 .About-txt p {
     color: #000;
-    font-family: 'Red Hat display';
-    font-size: 20px;
+    font-family: Poppins;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.2px;
-    margin-top: 20px;
+    letter-spacing: 0.16px;
+}
+.About-txt button{
+    display: flex;
+height: 45px;
+padding: 17px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 2px;
+background-color: #D19B43;
+border: none;
+margin-top: 20px;
+}
+.About-txt button a{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+.About-vector{
+    display: flex;
+    justify-content: end;
+    margin-top: -380px;
 }
 
-.about-image img {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 70px 0px;
-    border: 5px solid #D19B43;
+.section4-flex {
+    /* display: flex; */
+    margin-top: 350px;
 }
+
 
 .section4-txt {
     background-color: rgba(209, 155, 67, 0.11);
@@ -292,7 +349,7 @@ a:hover {
 }
 
 .section4-txt img {
-    border-radius: 15px;
+    position: absolute;
 }
 
 .section4-txt h1 {
@@ -311,10 +368,6 @@ a:hover {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-}
-
-.section4-flex{
-    display: flex;
 }
 
 
