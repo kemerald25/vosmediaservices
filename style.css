@@ -130,7 +130,6 @@ a:hover {
     margin-left: 25px;
     display: flex;
     justify-content: center;
-
     align-items: center;
 }
 
@@ -241,7 +240,7 @@ a:hover {
 
 .bg {
     background: rgba(0, 0, 0, 0.02);
-    width: 1489px;
+    width: 100%;
     height: 152px;
     margin-top: 70px;
 }
@@ -374,7 +373,6 @@ a:hover {
 }
 
 .sec4-boxtxt {
-    /* display: inline-flex; */
     padding: 94px 34px 30px 25px;
     flex-direction: column;
     justify-content: flex-end;
@@ -478,13 +476,17 @@ a:hover {
     line-height: normal;
     display: flex;
     justify-content: end;
-    padding-right: 150px;
+    padding-right: 130px;
+    margin-top: -100px;
 }
 .section4-vector{
     display: flex;
     justify-content: center;
 }
 
+.sec5-image{
+    margin-top: 50px;
+}
 
 
 
@@ -503,6 +505,540 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1250px){
+    .arrow {
+        margin-top: 50px;
+        margin-left: -100px;
+        width: 150px;
+}
+}
+
+@media (max-width: 1150px){
+    .arrow {
+      display: none;
+      
+}
+
+.banner-flex {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.banner-image img {
+    width: 150px;
+}
+
+.ban-img img {
+    margin-top: 90px;
+    padding: 0px 10px;
+    width: 150px;
+}
+
+
+.banner-text1 h5 {
+    color: rgba(209, 155, 67, 0.75);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    width: 130px;
+    padding: 10px 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 29px;
+    background: rgba(181, 57, 57, 0.10);
+    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+}
+
+.banner-text1 p {
+    color: rgba(0, 0, 0, 0.86);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    padding-top: 15px;
+}
+
+.banner-text1 h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.banner-text1 button {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    padding: 13px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background-color: #D19B43;
+    border: none;
+    margin-top: 15px;
+}
+
+.banner-text1 button a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner-text1 button a i{
+    font-size: 15px;
+}
+.star{
+    width: 150px;
+}
+.about-image img{
+    width: 350px;
+}
+
+.About-txt h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+
+.About-txt h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-decoration-line: underline;
+}
+
+.About-txt p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+.sec4-boxflex h1{
+    font-size: 18px;
+}
+.sec4-boxflex p{
+    font-size: 11px;
+}
+
+}
+
+
+@media (max-width: 1100px){
+    .arrow {
+      display: none;
+      
+}
+
+.banner-flex {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.banner-image img {
+    width: 150px;
+}
+
+.ban-img img {
+    margin-top: 80px;
+    padding: 0px 10px;
+    width: 150px;
+}
+
+
+.banner-text1 h5 {
+    color: rgba(209, 155, 67, 0.75);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    width: 130px;
+    padding: 10px 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 29px;
+    background: rgba(181, 57, 57, 0.10);
+    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+}
+
+.banner-text1 p {
+    color: rgba(0, 0, 0, 0.86);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    padding-top: 15px;
+}
+
+.banner-text1 h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.banner-text1 button {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    padding: 13px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background-color: #D19B43;
+    border: none;
+    margin-top: 15px;
+}
+
+.banner-text1 button a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner-text1 button a i{
+    font-size: 15px;
+}
+.star{
+    width: 150px;
+}
+.about-image img{
+    width: 350px;
+}
+
+.About-txt h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+.about-flex{
+    gap: 50px;
+}
+
+.About-txt h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-decoration-line: underline;
+}
+
+.About-txt p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+.sec4-boxflex{
+    gap: 40px;
+}
+.sec4-boxflex h1{
+    font-size: 18px;
+}
+.sec4-boxflex p{
+    font-size: 11px;
+}
+
+}
+
+@media (max-width: 1050px){
+    .arrow {
+      display: none;
+      
+}
+
+.banner-flex {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.banner-image img {
+    width: 120px;
+}
+
+.ban-img img {
+    margin-top: 50px;
+    padding: 0px 10px;
+    width: 150px;
+}
+
+
+.banner-text1 h5 {
+    color: rgba(209, 155, 67, 0.75);
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    width: 100px;
+    padding: 8px 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 29px;
+    background: rgba(181, 57, 57, 0.10);
+    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+}
+
+.banner-text1 p {
+    color: rgba(0, 0, 0, 0.86);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    padding-top: 15px;
+}
+
+.banner-text1 h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-text1 h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.banner-text1 svg {
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -10px;
+    width: 160px;
+}
+
+.banner-text1 h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.banner-text1 button {
+    display: flex;
+    width: 120px;
+    height: 40px;
+    padding: 13px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background-color: #D19B43;
+    border: none;
+    margin-top: 15px;
+}
+
+.banner-text1 button a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner-text1 button a i{
+    font-size: 15px;
+}
+.star{
+    width: 150px;
+}
+.about-image img{
+    width: 320px;
+}
+
+.About-txt h1 {
+    color: #000;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+.about-flex{
+    gap: 50px;
+}
+
+.About-txt h1 span {
+    color: #000;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-decoration-line: underline;
+}
+
+.About-txt p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.About-txt button {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    padding: 13px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background-color: #D19B43;
+    border: none;
+    margin-top: 15px;
+}
+
+.About-txt button a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.About-txt button a i{
+    font-size: 15px;
+}
+
+.About-vector {
+    display: flex;
+    justify-content: end;
+    margin-top: -300px;
+    /* margin-left: -100px; */
+}
+.sec4-boxflex{
+    gap: 20px;
+}
+.sec4-boxflex h1{
+    font-size: 16px;
+}
+.sec4-boxflex p{
+    font-size: 10px;
+}
+
+}
 
 @media (max-width: 990px) {
     .hambuger {
@@ -545,7 +1081,7 @@ a:hover {
         position: fixed;
         left: -100%;
         top: 80px;
-        height: 60vh;
+        height: 70vh;
         flex-direction: column;
         gap: 2rem;
         padding-bottom: 9rem;
@@ -574,4 +1110,1908 @@ a:hover {
         left: 0;
     }
 
+    .banner {
+        margin-top: 200px;
+    }
+    .banner-flex {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .banner-image{
+        gap: 10px;
+    }
+    .banner-image img {
+        width: 200px;
+    }
+    
+    .ban-img img {
+        margin-top: 100px;
+        padding: 0px 10px;
+        width: 220px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 160px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 200px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -28px;
+        margin-top: -5px;
+        width: 250px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 150px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 200px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+    }
+    .banner-text1 button a i{
+        font-size: 20px;
+    }
+    .star{
+        width: 150px;
+    }
+    .about-image img{
+        width: 500px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 140px;
+        height: 40px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 200px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 15px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -300px;
+        /* margin-left: -100px; */
+    }
+    .Feature-vector1{
+       display: none;
+    }
+    .Feature-vector1 img{
+        width: 130px;
+    }
+    .section4-txt{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .section4-vector{
+        display: none;
+    }
+    .sec4-boxtxt{
+       display: inline-flex;
+    }
+    .sec4-boxflex {
+        display: inline-grid;
+        text-align: center;
+        padding-top: 100px;
+        gap: 20px;
+    }
+    .sec4-boxflex h1{
+        font-size: 22px;
+    }
+    .sec4-boxflex p{
+        font-size: 15px;
+    }
+    .section4-flex {
+        width: 100%;
+        height: 115vh;
+       flex-shrink: 20;
+        margin-top: 300px;
+        text-align: center;
+        background-color: rgba(150, 150, 150, 0.062);
+    }
+    .sec4-boxtxt2{
+        margin-bottom: 20px;
+    }
+    .more-feactures {
+        color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hambuger {
+        display: block;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .hambuger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hambuger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hambuger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .cnt-1 {
+        display: flex;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        border-radius: 3px;
+        background: #D19B43;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        height: 70vh;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 9rem;
+        padding-top: 2rem;
+        width: 100%;
+        text-align: right;
+        transition: 0.3s;
+        background-color: #ffffff;
+    }
+
+    a {
+        margin-top: -30px;
+        color: #000;
+    }
+
+    a:hover {
+        color: #d19b43;
+    }
+
+
+    .nav-items {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .banner {
+        margin-top: 200px;
+    }
+    .banner-flex {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .banner-image{
+        gap: 10px;
+    }
+    .banner-image img {
+        width: 150px;
+    }
+    
+    .ban-img img {
+        margin-top: 100px;
+        padding: 0px 10px;
+        width: 170px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 150px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 200px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -35px;
+        margin-top: -5px;
+        width: 250px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 150px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 200px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 20px;
+    }
+    .star{
+        width: 150px;
+    }
+    .about-image img{
+        width: 450px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 140px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 200px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 15px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -300px;
+        /* margin-left: -100px; */
+    }
+    .Feature-vector1{
+        margin-left: 460px;
+    }
+    .Feature-vector1 img{
+        width: 130px;
+    }
+    .section4-txt{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .section4-vector{
+        display: none;
+    }
+    .sec4-boxtxt{
+       display: inline-flex;
+    }
+    .sec4-boxflex {
+        display: inline-grid;
+        text-align: center;
+        padding-top: 100px;
+        gap: 20px;
+    }
+    .sec4-boxflex h1{
+        font-size: 22px;
+    }
+    .sec4-boxflex p{
+        font-size: 15px;
+    }
+    .section4-flex {
+        width: 100%;
+        height: 115vh;
+       flex-shrink: 20;
+        margin-top: 300px;
+        text-align: center;
+        background-color: rgba(150, 150, 150, 0.062);
+    }
+    .sec4-boxtxt2{
+        margin-bottom: 20px;
+    }
+    .more-feactures {
+        color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .hambuger {
+        display: block;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .hambuger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hambuger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hambuger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .cnt-1 {
+        display: flex;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        border-radius: 3px;
+        background: #D19B43;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        height: 70vh;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 9rem;
+        padding-top: 2rem;
+        width: 100%;
+        text-align: right;
+        transition: 0.3s;
+        background-color: #ffffff;
+    }
+
+    a {
+        margin-top: -30px;
+        color: #000;
+    }
+
+    a:hover {
+        color: #d19b43;
+    }
+
+
+    .nav-items {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .banner {
+        margin-top: 200px;
+    }
+    .banner-flex {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .banner-image{
+        gap: 10px;
+    }
+    .banner-image img {
+        width: 130px;
+    }
+    
+    .ban-img img {
+        margin-top: 100px;
+        padding: 0px 10px;
+        width: 150px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 140px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 170px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -35px;
+        margin-top: -5px;
+        width: 240px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 130px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 170px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 20px;
+    }
+    .star{
+        width: 150px;
+    }
+    .about-image img{
+        width: 330px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 140px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 160px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 15px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -290px;
+        /* margin-left: -100px; */
+    }
+    .About-vector img{
+        width: 80px;
+    }
+ 
+    .section4-txt{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .section4-txt h1{
+        font-size: 30px;
+    }
+    .section4-txt p{
+        font-size: 14px;
+    }
+
+    .section4-vector{
+        display: none;
+    }
+    .sec4-boxtxt{
+       display: inline-flex;
+    }
+    .sec4-boxflex {
+        display: inline-grid;
+        text-align: center;
+        padding-top: 100px;
+        gap: 20px;
+    }
+    .sec4-boxflex h1{
+        font-size: 20px;
+    }
+    .sec4-boxflex p{
+        font-size: 13px;
+    }
+    .section4-flex {
+        width: 100%;
+        height: 115vh;
+       flex-shrink: 20;
+        margin-top: 300px;
+        text-align: center;
+        background-color: rgba(150, 150, 150, 0.062);
+    }
+    .sec4-boxtxt2{
+        margin-bottom: 20px;
+    }
+    .more-feactures {
+        color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    }
+}
+
+@media (max-width: 540px) {
+    .banner-image img {
+        width: 110px;
+    }
+    
+    .ban-img img {
+        margin-top: 100px;
+        padding: 0px 10px;
+        width: 130px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 140px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 150px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -6px;
+        margin-top: -15px;
+        width: 131px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 130px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 150px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 20px;
+    }
+    .star{
+        width: 120px;
+    }
+    .about-image img{
+        width: 300px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 130px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 120px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 13px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -270px;
+        /* margin-left: -100px; */
+    }
+    .About-vector img{
+        width: 80px;
+    }
+    .section4-flex{
+        height: 180vh;
+    }
+    .section4-txt h1{
+        font-size: 28px;
+    }
+    .section4-txt p{
+        font-size: 12px;
+    }
+    .sec4-boxflex h1{
+        font-size: 18px;
+    }
+    .sec4-boxflex p{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .banner-image img {
+        width: 100px;
+    }
+    
+    .ban-img img {
+        margin-top: 100px;
+        padding: 0px 10px;
+        width: 120px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 120px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 125px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+/*     
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -5px;
+        margin-top: -10px;
+        width: 145px;
+        text-align: center;
+
+    } */
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 120px;
+        height: 50px;
+        padding: 10px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 120px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 15px;
+    }
+    .star{
+        width: 120px;
+    }
+    .about-image img{
+        width: 280px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 120px;
+        height: 50px;
+        padding: 10px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 90px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 13px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -240px;
+        /* margin-left: -100px; */
+    }
+    .About-vector img{
+        width: 70px;
+    }
+    .section4-txt{
+        padding-left: 0;
+    }
+    .section4-txt h1{
+        font-size: 26px;
+    }
+    .section4-txt p{
+        font-size: 10px;
+    }
+    .sec4-boxflex{
+        margin-top: 0;
+    }
+    .sec4-boxflex h1{
+        font-size: 16px;
+    }
+    .sec4-boxflex p{
+        font-size: 10px;
+    }
+    .more-feactures {
+        color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    }
+}
+
+@media (max-width: 540px) {
+    .banner-image img {
+        width: 110px;
+    }
+    
+    .ban-img img {
+        margin-top: 100px;
+        padding: 0px 10px;
+        width: 130px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 140px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 150px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -9px;
+        margin-top: -10px;
+        width: 165px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 130px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 150px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 20px;
+    }
+    .star{
+        width: 120px;
+    }
+    .about-image img{
+        width: 300px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 130px;
+        height: 50px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 120px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 13px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -270px;
+        /* margin-left: -100px; */
+    }
+    .About-vector img{
+        width: 80px;
+    }
+    .section4-txt h1{
+        font-size: 28px;
+    }
+    .section4-txt p{
+        font-size: 12px;
+    }
+    .sec4-boxflex h1{
+        font-size: 18px;
+    }
+    .sec4-boxflex p{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .banner-image img {
+        width: 70px;
+    }
+    
+    .ban-img img {
+        margin-top: 40px;
+        padding: 0px 10px;
+        width: 90px;
+    }
+    
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 100px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 105px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -5px;
+        margin-top: -16px;
+        width: 115px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 100px;
+        height: 50px;
+        /* padding: 5px 8px; */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 11px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 13px;
+    }
+    .star{
+        width: 100px;
+    }
+    .about-image img{
+        width: 250px;
+    }
+    
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        margin-bottom: 15px;
+    }
+    .about-flex{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .About-txt{
+        text-align: center;
+    }
+    
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+    
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .About-txt button {
+        display: flex;
+        width: 110px;
+        height: 50px;
+        /* padding: 10px 16px; */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 25px;
+        margin-left: 70px;
+    }
+    
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .About-txt button a i{
+        font-size: 11px;
+    }
+    
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -200px;
+        /* margin-left: -100px; */
+    }
+    .About-vector img{
+        width: 50px;
+    }
+    .section4-txt{
+        padding-left: 0;
+    }
+    .section4-txt h1{
+        font-size: 24px;
+    }
+    .section4-txt p{
+        font-size: 8px;
+    }
+    .sec4-boxflex{
+        margin-top: 0;
+    }
+    .sec4-boxflex h1{
+        font-size: 14px;
+    }
+    .sec4-boxflex p{
+        font-size: 8px;
+    }
+    .more-feactures {
+        color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    }
+}
+
+@media (max-width: 414px) {
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 95px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 100px;
+        text-align: center;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+    
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+    }
+    
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -5px;
+        margin-top: -18px;
+        width: 105px;
+        text-align: center;
+
+    }
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 5px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .banner-text1 button {
+        display: flex;
+        width: 95px;
+        height: 50px;
+        /* padding: 5px 8px; */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 90px;
+    }
+    
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 25px;
+    }
+    .banner-text1 button a i{
+        font-size: 11px;
+    }
+    .star{
+        width: 80px;
+    }
+  .more-feactures p a{
+    font-size: 11px;
+  }
+  .section4-flex{
+    height: 130vh;
+  }
 }
