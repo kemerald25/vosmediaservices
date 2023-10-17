@@ -486,9 +486,33 @@ a:hover {
 
 .sec5-image{
     margin-top: 50px;
+    position: absolute;
 }
 
+.sec5-image img{
+    width: 100%;
+}
 
+.sec5-txt h1{
+    color: #FFF;
+font-family: Nunito;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: relative;
+padding-top: 160px;
+text-align: center;
+}
+
+.sec5-txt h1 span{
+    color: #d19b43;
+font-family: Nunito;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 
 
 
@@ -521,6 +545,9 @@ a:hover {
         margin-top: 50px;
         margin-left: -100px;
         width: 150px;
+}
+.sec5-image img{
+    width: 100%;
 }
 }
 
@@ -674,6 +701,27 @@ a:hover {
 }
 .sec4-boxflex p{
     font-size: 11px;
+}
+
+.sec5-txt h1{
+    color: #FFF;
+font-family: Nunito;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: relative;
+padding-top: 160px;
+text-align: center;
+}
+
+.sec5-txt h1 span{
+    color: #d19b43;
+font-family: Nunito;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 }
@@ -835,6 +883,27 @@ a:hover {
 }
 .sec4-boxflex p{
     font-size: 11px;
+}
+
+.sec5-txt h1{
+    color: #FFF;
+font-family: Nunito;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: relative;
+padding-top: 160px;
+text-align: center;
+}
+
+.sec5-txt h1 span{
+    color: #d19b43;
+font-family: Nunito;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 }
@@ -1036,6 +1105,26 @@ a:hover {
 }
 .sec4-boxflex p{
     font-size: 10px;
+}
+.sec5-txt h1{
+    color: #FFF;
+font-family: Nunito;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: relative;
+padding-top: 160px;
+text-align: center;
+}
+
+.sec5-txt h1 span{
+    color: #d19b43;
+font-family: Nunito;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 }
@@ -1346,7 +1435,7 @@ a:hover {
     }
     .section4-flex {
         width: 100%;
-        height: 115vh;
+        height: 135vh;
        flex-shrink: 20;
         margin-top: 300px;
         text-align: center;
@@ -1366,7 +1455,28 @@ a:hover {
     justify-content: center;
     text-align: center;
     padding-left: 150px;
-    padding-top: 50px;
+    padding-top: 145px;
+    }
+    
+    .sec5-txt h1{
+        color: #FFF;
+    font-family: Nunito;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 120px;
+    text-align: center;
+    }
+    
+    .sec5-txt h1 span{
+        color: #d19b43;
+    font-family: Nunito;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
 }
 
@@ -1676,7 +1786,7 @@ a:hover {
     }
     .section4-flex {
         width: 100%;
-        height: 115vh;
+        /* height: 115vh; */
        flex-shrink: 20;
         margin-top: 300px;
         text-align: center;
@@ -1696,6 +1806,27 @@ a:hover {
     justify-content: center;
     text-align: center;
     padding-left: 150px;
+    }
+
+    .sec5-txt h1{
+        color: #FFF;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 120px;
+    text-align: center;
+    }
+    
+    .sec5-txt h1 span{
+        color: #d19b43;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
 }
 
@@ -2010,7 +2141,7 @@ a:hover {
     }
     .section4-flex {
         width: 100%;
-        height: 115vh;
+        /* height: 115vh; */
        flex-shrink: 20;
         margin-top: 300px;
         text-align: center;
@@ -2031,6 +2162,28 @@ a:hover {
     text-align: center;
     padding-left: 150px;
     }
+
+    .sec5-txt h1{
+        color: #FFF;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    }
+    
+    .sec5-txt h1 span{
+        color: #d19b43;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    
 }
 
 @media (max-width: 540px) {
@@ -2228,7 +2381,7 @@ a:hover {
         width: 80px;
     }
     .section4-flex{
-        height: 180vh;
+        height: 110vh;
     }
     .section4-txt h1{
         font-size: 28px;
@@ -2241,6 +2394,27 @@ a:hover {
     }
     .sec4-boxflex p{
         font-size: 12px;
+    }
+
+    .sec5-txt h1{
+        color: #FFF;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    }
+    
+    .sec5-txt h1 span{
+        color: #d19b43;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
 }
 
@@ -2286,34 +2460,7 @@ a:hover {
         padding-top: 15px;
         text-align: center;
     }
-/*     
-    .banner-text1 h1 {
-        color: #000;
-        font-family: Nunito;
-        font-size: 31px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-align: center;
 
-    }
-    
-    .banner-text1 h1 span {
-        color: #000;
-        font-family: Nunito;
-        font-size: 31px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .banner-text1 svg {
-        position: absolute;
-        margin-left: -5px;
-        margin-top: -10px;
-        width: 145px;
-        text-align: center;
-
-    } */
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -2339,7 +2486,7 @@ a:hover {
         text-align: center;
         margin-left: 120px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -2448,6 +2595,9 @@ a:hover {
     .section4-txt p{
         font-size: 10px;
     }
+    .section4-flex{
+        height: 95vh;
+    }
     .sec4-boxflex{
         margin-top: 0;
     }
@@ -2469,216 +2619,28 @@ a:hover {
     text-align: center;
     padding-left: 150px;
     }
-}
 
-@media (max-width: 540px) {
-    .banner-image img {
-        width: 110px;
-    }
-    
-    .ban-img img {
-        margin-top: 100px;
-        padding: 0px 10px;
-        width: 130px;
-    }
-    
-    .banner-text1 h5 {
-        color: rgba(209, 155, 67, 0.75);
-        font-family: Poppins;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        display: flex;
-        width: 140px;
-        padding: 8px 5px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-left: 150px;
-        text-align: center;
-        border-radius: 29px;
-        background: rgba(181, 57, 57, 0.10);
-        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
-    }
-    
-    .banner-text1 p {
-        color: rgba(0, 0, 0, 0.86);
-        font-family: Poppins;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 450;
-        line-height: normal;
-        padding-top: 15px;
-        text-align: center;
-    }
-    
-    .banner-text1 h1 {
-        color: #000;
-        font-family: Nunito;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-align: center;
-
-    }
-    
-    .banner-text1 h1 span {
-        color: #000;
-        font-family: Nunito;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .banner-text1 svg {
-        position: absolute;
-        margin-left: -9px;
-        margin-top: -10px;
-        width: 165px;
-        text-align: center;
-
-    }
-    .banner-text1 h6 {
-        color: #000;
-        font-family: Poppins;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 450;
-        line-height: normal;
-        text-align: center;
-    }
-    
-    .banner-text1 button {
-        display: flex;
-        width: 130px;
-        height: 50px;
-        padding: 13px 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 3px;
-        background-color: #D19B43;
-        border: none;
-        margin-top: 15px;
-        text-align: center;
-        margin-left: 150px;
-    }
-    
-    .banner-text1 button a {
-        text-decoration: none;
+    .sec5-txt h1{
         color: #FFF;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 15px;
-        font-style: italic;
-        font-weight: 400;
-        line-height: normal;
-        padding-top: 25px;
-    }
-    .banner-text1 button a i{
-        font-size: 20px;
-    }
-    .star{
-        width: 120px;
-    }
-    .about-image img{
-        width: 300px;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 90px;
+    text-align: center;
     }
     
-    .About-txt h1 {
-        color: #000;
-        font-family: Nunito;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 650;
-        line-height: normal;
-        letter-spacing: 0.24px;
-        margin-bottom: 15px;
-    }
-    .about-flex{
-        gap: 50px;
-        flex-direction: column;
-    }
-    .About-txt{
-        text-align: center;
-    }
-    
-    .About-txt h1 span {
-        color: #000;
-        font-family: Nunito;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 650;
-        line-height: normal;
-        letter-spacing: 0.24px;
-        text-decoration-line: underline;
-    }
-    
-    .About-txt p {
-        color: #000;
-        font-family: Poppins;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.16px;
-    }
-    
-    .About-txt button {
-        display: flex;
-        width: 130px;
-        height: 50px;
-        padding: 13px 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 3px;
-        background-color: #D19B43;
-        border: none;
-        margin-top: 25px;
-        margin-left: 120px;
-    }
-    
-    .About-txt button a {
-        text-decoration: none;
-        color: #FFF;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 13px;
-        font-style: italic;
-        font-weight: 400;
-        line-height: normal;
-        padding-top: 25px;
-    }
-    .About-txt button a i{
-        font-size: 13px;
-    }
-    
-    .About-vector {
-        display: flex;
-        justify-content: end;
-        margin-top: -270px;
-        /* margin-left: -100px; */
-    }
-    .About-vector img{
-        width: 80px;
-    }
-    .section4-txt h1{
-        font-size: 28px;
-    }
-    .section4-txt p{
-        font-size: 12px;
-    }
-    .sec4-boxflex h1{
-        font-size: 18px;
-    }
-    .sec4-boxflex p{
-        font-size: 12px;
+    .sec5-txt h1 span{
+        color: #d19b43;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
 }
-
 
 @media (max-width: 414px) {
     .banner-image img {
@@ -2904,9 +2866,12 @@ a:hover {
     text-align: center;
     padding-left: 150px;
     }
+    .section4-flex{
+        height: 125vh;
+    }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 375px) {
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -3012,6 +2977,50 @@ a:hover {
     font-size: 11px;
   }
   .section4-flex{
-    height: 130vh;
+    height: 160vh;
   }
 }
+
+@media (max-width: 314px) {
+    .section4-flex{
+        height: 90vh;
+      }
+      .more-feactures {
+        color: #000;
+    font-family: Poppins;
+    font-size: 8px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 150px;
+    }
+
+    .sec5-txt h1{
+        color: #FFF;
+    font-family: Nunito;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+    }
+    
+    .sec5-txt h1 span{
+        color: #d19b43;
+    font-family: Nunito;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+}
+/* @media (max-width: 314px) {
+    .sec5-image img{
+        width: 100%;
+      }
+} */
