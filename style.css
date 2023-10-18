@@ -2886,11 +2886,11 @@ line-height: normal;
 
 @media (max-width: 375px) {
     .banner-text1 h5 {
-        color: rgba(209, 155, 67, 0.75);
-        font-family: Poppins;
+        color: rgb(209, 155, 67);
+        font-family: "Poppins";
         font-size: 7px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         line-height: normal;
         display: flex;
         width: 95px;
@@ -2898,7 +2898,7 @@ line-height: normal;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-left: 100px;
+        margin-left: 90px;
         text-align: center;
         border-radius: 29px;
         background: rgba(181, 57, 57, 0.10);
@@ -2956,7 +2956,7 @@ line-height: normal;
     .banner-text1 button {
         display: flex;
         width: 95px;
-        height: 50px;
+        height: 30px;
         /* padding: 5px 8px; */
         justify-content: center;
         align-items: center;
