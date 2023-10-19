@@ -19,7 +19,64 @@ body {
     width: 100%;
 }
 
-
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1150px;
+    margin: 0 auto;
+    grid-auto-rows: minmax(30px auto);
+    gap: 10px;
+    margin-top: 50px;
+    
+}
+.grid1{
+    grid-column: 1/3;
+    grid-row: 1/50;
+    background-color: #000;
+}
+.grid2{
+    grid-column: 3/5;
+    grid-row: 1/25;
+    /* background-color: #000; */
+}
+.grid2:hover .hover-info{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    transition: ease-in 3s;
+}
+.hover-info{
+    background-color: #00000086;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 240px;
+    display: none;
+    
+    
+}
+.hover-info p{
+    margin: 0;
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    
+}
+.grid2 img{
+    object-fit: contain;
+    height: 100%;
+}
+.grid3{
+    grid-column: 3/4;
+    grid-row: 25/50;
+    background-color: #000;
+}
+.grid4{
+    grid-column: 4/5;
+    grid-row: 25/50;
+    background-color: #000;
+}
 .logo img {
     width: 120px;
     padding: 10px;
@@ -520,7 +577,39 @@ font-weight: 700;
 line-height: normal;
 }
 
+.sec6-text{
+    margin-top: 180px;
+    text-align: center;
+}
+.sec6-text h1{
+    color: #000;
+text-align: center;
+font-family: 'Poppins';
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
 
+.sec6-text h1 span{
+    color: #d19b43;
+text-align: center;
+font-family: 'Poppins';
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.sec6-text p{
+    color: #000;
+text-align: center;
+font-family: 'Poppins';
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
 
 
 
