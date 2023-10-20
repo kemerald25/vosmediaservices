@@ -26,17 +26,16 @@ body {
     margin: 0 auto;
     grid-auto-rows: minmax(30px auto);
     gap: 10px;
-    margin-top: 50px;
-    
+    margin-top: 50px;   
 }
 .grid1{
     grid-column: 1/3;
-    grid-row: 1/50;
+    grid-row: 1/26;
     background-color: #000;
 }
 .grid2{
     grid-column: 3/5;
-    grid-row: 1/25;
+    grid-row: 1/20;
     /* background-color: #000; */
 }
 .grid2:hover .hover-info{
@@ -52,30 +51,63 @@ body {
     width: 100%;
     height: 100%;
     bottom: 240px;
-    display: none;
-    
-    
+    display: none;   
 }
 .hover-info p{
     margin: 0;
     position: absolute;
     color: #FFF;
-    text-align: center;
-    
+    text-align: center;  
 }
+
 .grid2 img{
     object-fit: contain;
     height: 100%;
 }
+.grid3 img{
+    object-fit: contain;
+    height: 100%;
+}
+.hover-info2{
+    background-color: #00000086;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 164px;
+    display: none;   
+}
+.hover-info2 p{
+    margin: 0;
+    position: absolute;
+    color: #FFF;
+    text-align: center;  
+    font-size: 12px;
+}
+.grid3:hover .hover-info2{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    transition: ease-in 3s;
+}
+.grid4 img{
+    object-fit: contain;
+    height: 100%;
+}
+.grid4:hover .hover-info2{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    transition: ease-in 3s;
+}
 .grid3{
     grid-column: 3/4;
-    grid-row: 25/50;
-    background-color: #000;
+    grid-row: 20/26;
 }
 .grid4{
     grid-column: 4/5;
-    grid-row: 25/50;
-    background-color: #000;
+    grid-row: 20/26;
 }
 .logo img {
     width: 120px;
@@ -1001,6 +1033,22 @@ font-weight: 700;
 line-height: normal;
 }
 
+.hover-info{
+    background-color: #00000086;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 230px;
+    display: none;   
+}
+.hover-info2{
+    background-color: #00000086;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 157px;
+    display: none;   
+}
 }
 
 @media (max-width: 1050px){
@@ -1221,7 +1269,44 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+.hover-info{
+    background-color: #00000086;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 220px;
+    display: none;   
+}
+.hover-info2{
+    background-color: #00000086;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 150px;
+    display: none;   
+}
+}
 
+@media (max-width: 1000px){
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 200px;
+        display: none;   
+    }
+    .hover-info2 p{
+        font-size: 10px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 140px;
+        display: none;   
+    }
 }
 
 @media (max-width: 990px) {
@@ -1576,6 +1661,69 @@ line-height: normal;
     font-weight: 700;
     line-height: normal;
     }
+    .sec6-text h1{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    
+    .sec6-text h1 span{
+        color: #d19b43;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    
+    .sec6-text p{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    .hover-info2 p{
+        font-size: 9px;
+    }
+}
+@media (max-width: 900px){
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 190px;
+        display: none;   
+    }
+    .hover-info2 p{
+        font-size: 8px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 133px;
+        display: none;   
+    }
+}
+@media (max-width: 800px){
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 113px;
+        display: none;   
+    }
 }
 
 @media (max-width: 768px) {
@@ -1925,6 +2073,84 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    }
+    .sec6-text h1{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    
+    .sec6-text h1 span{
+        color: #d19b43;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    
+    .sec6-text p{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 650px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;   
+    }
+    .grid1 {
+        grid-column: 1/4;
+        grid-row: 1/35;
+    }
+    .grid1 iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .grid2 {
+        grid-column: 1/4;
+        grid-row: 35/50;
+    }
+    .grid3 {
+        grid-column: 1/4;
+        grid-row: 50/70;
+    }
+    .grid4 {
+        grid-column: 1/4;
+        grid-row: 70/90;
+    }
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 270px;
+        display: none;   
+    }
+    .hover-info2 p{
+        font-size: 20px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 360px;
+        display: none;   
     }
 }
 
@@ -2281,7 +2507,43 @@ line-height: normal;
     font-weight: 700;
     line-height: normal;
     }
-    
+    .sec6-text p{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 500px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;   
+    }
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 210px;
+        display: none;   
+    }
+    .hover-info2 p{
+        font-size: 16px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 280px;
+        display: none;   
+    }
 }
 
 @media (max-width: 540px) {
@@ -2514,6 +2776,44 @@ line-height: normal;
     font-weight: 700;
     line-height: normal;
     }
+    .sec6-text p{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size:10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 450px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;   
+    } 
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 190px;
+        display: none;   
+    }
+    .hover-info2 p{
+        font-size: 14px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 255px;
+        display: none;   
+    }
+
 }
 
 
@@ -2738,6 +3038,46 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    }
+    .sec6-text p{
+        color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;   
+    }
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 170px;
+        display: none;   
+    }
+    .hover-info p{
+        font-size: 14px;
+    }
+    .hover-info2 p{
+        font-size: 14px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 225px;
+        display: none;   
     }
 }
 
@@ -2972,6 +3312,37 @@ line-height: normal;
     .sec5{
         margin-top: 485px;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 350px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;   
+    }
+    .hover-info{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 150px;
+        display: none;   
+    }
+    .hover-info p{
+        font-size: 12px;
+    }
+    .hover-info2 p{
+        font-size: 12px;
+    }
+    .hover-info2{
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 200px;
+        display: none;   
+    }
 }
 
 @media (max-width: 375px) {
@@ -3092,6 +3463,15 @@ line-height: normal;
 .sec5-txt h1 span{
     font-size: 10px;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+    margin: 0 auto;
+    grid-auto-rows: minmax(30px auto);
+    gap: 10px;
+    margin-top: 50px;   
+}
 }
 
 @media (max-width: 314px) {
@@ -3133,6 +3513,15 @@ line-height: normal;
     }
     .sec5{
         margin-top: 155px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 280px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;   
     }
 }
 /* @media (max-width: 314px) {
