@@ -720,6 +720,7 @@ a:hover {
     border: 1px solid #0000001e;
     background: none;
     padding-left: 20px;
+    outline: none;
 }
 
 .footer-input::placeholder {
