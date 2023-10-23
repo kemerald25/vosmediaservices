@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
 * {
     padding: 0;
     margin: 0%;
@@ -19,96 +20,139 @@ body {
     width: 100%;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1150px;
     margin: 0 auto;
     grid-auto-rows: minmax(30px auto);
     gap: 10px;
-    margin-top: 50px;   
+    margin-top: 50px;
 }
-.grid1{
+
+.grid1 {
     grid-column: 1/3;
     grid-row: 1/26;
     background-color: #000;
 }
-.grid2{
+
+.grid2 {
     grid-column: 3/5;
     grid-row: 1/20;
     /* background-color: #000; */
 }
-.grid2:hover .hover-info{
+
+.grid2:hover .hover-info {
     display: flex;
     justify-content: center;
     cursor: pointer;
     align-items: center;
     transition: ease-in 3s;
 }
-.hover-info{
+
+.hover-info {
     background-color: #00000086;
     position: relative;
     width: 100%;
     height: 100%;
     bottom: 240px;
-    display: none;   
+    display: none;
 }
-.hover-info p{
+
+.hover-info p {
     margin: 0;
     position: absolute;
     color: #FFF;
-    text-align: center;  
+    text-align: center;
 }
 
-.grid2 img{
+.grid2 img {
     object-fit: contain;
     height: 100%;
 }
-.grid3 img{
+
+.grid3 img {
     object-fit: contain;
     height: 100%;
 }
-.hover-info2{
+
+.hover-info2 {
     background-color: #00000086;
     position: relative;
     width: 100%;
     height: 100%;
     bottom: 164px;
-    display: none;   
+    display: none;
 }
-.hover-info2 p{
+
+.hover-info2 p {
     margin: 0;
     position: absolute;
     color: #FFF;
-    text-align: center;  
+    text-align: center;
     font-size: 12px;
 }
-.grid3:hover .hover-info2{
+
+.grid3:hover .hover-info2 {
     display: flex;
     justify-content: center;
     cursor: pointer;
     align-items: center;
     transition: ease-in 3s;
 }
-.grid4 img{
+
+.grid4 img {
     object-fit: contain;
     height: 100%;
 }
-.grid4:hover .hover-info2{
+
+.grid4:hover .hover-info2 {
     display: flex;
     justify-content: center;
     cursor: pointer;
     align-items: center;
     transition: ease-in 3s;
 }
-.grid3{
+
+.grid3 {
     grid-column: 3/4;
     grid-row: 20/26;
 }
-.grid4{
+
+.grid4 {
     grid-column: 4/5;
     grid-row: 20/26;
 }
+
+.grind-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grind-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 125px;
+    gap: 10px;
+    border-radius: 2px;
+    background-color: #D19B43;
+    border: none;
+    margin-top: 50px;
+}
+
+.grind-btn button a {
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
 .logo img {
     width: 120px;
     padding: 10px;
@@ -158,13 +202,15 @@ a:hover {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.btn1:hover{
+.btn1:hover {
     background-color: transparent;
     border: 1px solid #D19B43;
 }
-.btn1 a:hover{
+
+.btn1 a:hover {
     color: #D19B43;
 }
+
 .btn1 a {
     color: #ffffff;
 }
@@ -540,8 +586,8 @@ a:hover {
     border-radius: 10px;
     background-color: rgba(77, 77, 77, 0.80);
     box-shadow: 1px 1px 14px 0px rgba(245, 245, 245, 0.66);
-   margin-top: -140px;
-   margin-bottom: 190px;
+    margin-top: -140px;
+    margin-bottom: 190px;
 }
 
 .sec4-boxtxt2 h1 {
@@ -574,72 +620,203 @@ a:hover {
     padding-right: 130px;
     margin-top: -100px;
 }
-.section4-vector{
+
+.section4-vector {
     display: flex;
     justify-content: center;
 }
 
-.sec5-image{
+.sec5-image {
     margin-top: 50px;
     position: absolute;
 }
 
-.sec5-image img{
+.sec5-image img {
     width: 100%;
 }
 
-.sec5-txt h1{
+.sec5-txt h1 {
     color: #FFF;
-font-family: "Nunito";
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-padding-top: 160px;
-text-align: center;
+    font-family: "Nunito";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 160px;
+    text-align: center;
 }
 
-.sec5-txt h1 span{
+.sec5-txt h1 span {
     color: #d19b43;
-font-family: "Nunito";
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: "Nunito";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-.sec6-text{
+.sec6-text {
     margin-top: 180px;
     text-align: center;
 }
-.sec6-text h1{
+
+.sec6-text h1 {
     color: #000;
-text-align: center;
-font-family: 'Poppins';
-font-size: 38px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.sec6-text h1 span{
+.sec6-text h1 span {
     color: #d19b43;
-text-align: center;
-font-family: 'Poppins';
-font-size: 38px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.sec6-text p{
+.sec6-text p {
     color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: #00000011;
+    margin-top: 50px;
+}
+
+.footer-bg {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.footer-logo img {
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.footer-input input {
+    width: 200px;
+    height: 60px;
+    border: 1px solid #0000001e;
+    background: none;
+    padding-left: 20px;
+}
+
+.footer-input::placeholder {
+    color: #535353;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-input button {
+    width: 160px;
+    height: 60px;
+    background-color: #d19b43;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-input button a {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer-bg p {
+    color: #000000;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 40px;
+}
+
+.footer-link p {
+    color: #1E1E1E;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.footer-link ul li{
+    padding: 10px 0px;
+}
+.footer-link ul li a{
+    color: #000000;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-link ul li a:hover{
+    color: #d19b43;
+}
+
+.footer-link button{
+    width: 100px;
+    height: 40px;
+    background-color: #d19b43;
+    border: none;
+    margin-top: 10px;
+}
+
+.footer-link button a {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* .footer-icons{
+    padding-left: 100px;
+} */
+.footer-txticon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 95px;
+    flex-wrap: wrap;
+}
+.footer-icons i{
+    color: #000;
+    padding: 30px 3px;
+}
+
+.footer-text p{
+    color: #535353;
 text-align: center;
 font-family: 'Poppins';
-font-size: 20px;
+font-size: 14px;
 font-style: normal;
-font-weight: 500;
+font-weight: 400;
 line-height: normal;
 }
 
@@ -667,645 +844,695 @@ line-height: normal;
 
 
 
-@media (max-width: 1250px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1250px) {
     .arrow {
         margin-top: 50px;
         margin-left: -100px;
         width: 150px;
-}
-.sec5-image img{
-    width: 100%;
-}
+    }
+
+    .sec5-image img {
+        width: 100%;
+    }
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1150px) {
     .arrow {
-      display: none;
-      
-}
+        display: none;
 
-.banner-flex {
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
+    }
 
-
-.banner-image img {
-    width: 150px;
-}
-
-.ban-img img {
-    margin-top: 90px;
-    padding: 0px 10px;
-    width: 150px;
-}
+    .banner-flex {
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
 
 
-.banner-text1 h5 {
-    color: rgba(209, 155, 67, 0.75);
-    font-family: "Poppins";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    display: flex;
-    width: 130px;
-    padding: 10px 7px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 29px;
-    background: rgba(181, 57, 57, 0.10);
-    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
-}
+    .banner-image img {
+        width: 150px;
+    }
 
-.banner-text1 p {
-    color: rgba(0, 0, 0, 0.86);
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    padding-top: 15px;
-}
-
-.banner-text1 h1 {
-    color: #000;
-    font-family: Nunito;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.banner-text1 h1 span {
-    color: #000;
-    font-family: Nunito;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.banner-text1 h6 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-}
-
-.banner-text1 button {
-    display: flex;
-    width: 120px;
-    height: 40px;
-    padding: 13px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 3px;
-    background-color: #D19B43;
-    border: none;
-    margin-top: 15px;
-}
-
-.banner-text1 button a {
-    text-decoration: none;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-}
-.banner-text1 button a i{
-    font-size: 15px;
-}
-.star{
-    width: 150px;
-}
-.about-image img{
-    width: 350px;
-}
-
-.About-txt h1 {
-    color: #000;
-    font-family: Nunito;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    letter-spacing: 0.24px;
-}
-
-.About-txt h1 span {
-    color: #000;
-    font-family: Nunito;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    letter-spacing: 0.24px;
-    text-decoration-line: underline;
-}
-
-.About-txt p {
-    color: #000;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-.sec4-boxflex h1{
-    font-size: 18px;
-}
-.sec4-boxflex p{
-    font-size: 11px;
-}
-
-.sec5-txt h1{
-    color: #FFF;
-font-family: Nunito;
-font-size: 34px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-padding-top: 160px;
-text-align: center;
-}
-
-.sec5-txt h1 span{
-    color: #d19b43;
-font-family: Nunito;
-font-size: 34px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-}
+    .ban-img img {
+        margin-top: 90px;
+        padding: 0px 10px;
+        width: 150px;
+    }
 
 
-@media (max-width: 1100px){
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 130px;
+        padding: 10px 7px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+    }
+
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    .banner-text1 button {
+        display: flex;
+        width: 120px;
+        height: 40px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .banner-text1 button a i {
+        font-size: 15px;
+    }
+
+    .star {
+        width: 150px;
+    }
+
+    .about-image img {
+        width: 350px;
+    }
+
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+
+    .sec4-boxflex h1 {
+        font-size: 18px;
+    }
+
+    .sec4-boxflex p {
+        font-size: 11px;
+    }
+
+    .sec5-txt h1 {
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 160px;
+        text-align: center;
+    }
+
+    .sec5-txt h1 span {
+        color: #d19b43;
+        font-family: Nunito;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
     .arrow {
-      display: none;
-      
-}
+        display: none;
 
-.banner-flex {
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
+    }
 
-
-.banner-image img {
-    width: 150px;
-}
-
-.ban-img img {
-    margin-top: 80px;
-    padding: 0px 10px;
-    width: 150px;
-}
+    .banner-flex {
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
 
 
-.banner-text1 h5 {
-    color: rgba(209, 155, 67, 0.75);
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    display: flex;
-    width: 130px;
-    padding: 10px 7px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 29px;
-    background: rgba(181, 57, 57, 0.10);
-    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    .banner-image img {
+        width: 150px;
+    }
+
+    .ban-img img {
+        margin-top: 80px;
+        padding: 0px 10px;
+        width: 150px;
+    }
+
+
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 130px;
+        padding: 10px 7px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+    }
+
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    .banner-text1 button {
+        display: flex;
+        width: 120px;
+        height: 40px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .banner-text1 button a i {
+        font-size: 15px;
+    }
+
+    .star {
+        width: 150px;
+    }
+
+    .about-image img {
+        width: 350px;
+    }
+
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+
+    .about-flex {
+        gap: 50px;
+    }
+
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+
+    .sec4-boxflex {
+        gap: 40px;
+    }
+
+    .sec4-boxflex h1 {
+        font-size: 18px;
+    }
+
+    .sec4-boxflex p {
+        font-size: 11px;
+    }
+
+    .sec5-txt h1 {
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 160px;
+        text-align: center;
+    }
+
+    .sec5-txt h1 span {
+        color: #d19b43;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hover-info {
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 230px;
+        display: none;
+    }
+
+    .hover-info2 {
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 157px;
+        display: none;
+    }
 }
 
-.banner-text1 p {
-    color: rgba(0, 0, 0, 0.86);
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    padding-top: 15px;
-}
-
-.banner-text1 h1 {
-    color: #000;
-    font-family: Nunito;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.banner-text1 h1 span {
-    color: #000;
-    font-family: Nunito;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.banner-text1 h6 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-}
-
-.banner-text1 button {
-    display: flex;
-    width: 120px;
-    height: 40px;
-    padding: 13px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 3px;
-    background-color: #D19B43;
-    border: none;
-    margin-top: 15px;
-}
-
-.banner-text1 button a {
-    text-decoration: none;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-}
-.banner-text1 button a i{
-    font-size: 15px;
-}
-.star{
-    width: 150px;
-}
-.about-image img{
-    width: 350px;
-}
-
-.About-txt h1 {
-    color: #000;
-    font-family: Nunito;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    letter-spacing: 0.24px;
-}
-.about-flex{
-    gap: 50px;
-}
-
-.About-txt h1 span {
-    color: #000;
-    font-family: Nunito;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    letter-spacing: 0.24px;
-    text-decoration-line: underline;
-}
-
-.About-txt p {
-    color: #000;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-.sec4-boxflex{
-    gap: 40px;
-}
-.sec4-boxflex h1{
-    font-size: 18px;
-}
-.sec4-boxflex p{
-    font-size: 11px;
-}
-
-.sec5-txt h1{
-    color: #FFF;
-font-family: Nunito;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-padding-top: 160px;
-text-align: center;
-}
-
-.sec5-txt h1 span{
-    color: #d19b43;
-font-family: Nunito;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.hover-info{
-    background-color: #00000086;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 230px;
-    display: none;   
-}
-.hover-info2{
-    background-color: #00000086;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 157px;
-    display: none;   
-}
-}
-
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
     .arrow {
-      display: none;
-      
-}
+        display: none;
 
-.banner-flex {
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
+    }
 
-
-.banner-image img {
-    width: 120px;
-}
-
-.ban-img img {
-    margin-top: 50px;
-    padding: 0px 10px;
-    width: 150px;
-}
+    .banner-flex {
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
 
 
-.banner-text1 h5 {
-    color: rgba(209, 155, 67, 0.75);
-    font-family: Poppins;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    display: flex;
-    width: 100px;
-    padding: 8px 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 29px;
-    background: rgba(181, 57, 57, 0.10);
-    box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    .banner-image img {
+        width: 120px;
+    }
+
+    .ban-img img {
+        margin-top: 50px;
+        padding: 0px 10px;
+        width: 150px;
+    }
+
+
+    .banner-text1 h5 {
+        color: rgba(209, 155, 67, 0.75);
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 100px;
+        padding: 8px 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 29px;
+        background: rgba(181, 57, 57, 0.10);
+        box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
+    }
+
+    .banner-text1 p {
+        color: rgba(0, 0, 0, 0.86);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        padding-top: 15px;
+    }
+
+    .banner-text1 h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner-text1 h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .banner-text1 svg {
+        position: absolute;
+        margin-left: -8px;
+        margin-top: -10px;
+        width: 160px;
+    }
+
+    .banner-text1 h6 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    .banner-text1 button {
+        display: flex;
+        width: 120px;
+        height: 40px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .banner-text1 button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .banner-text1 button a i {
+        font-size: 15px;
+    }
+
+    .star {
+        width: 150px;
+    }
+
+    .about-image img {
+        width: 320px;
+    }
+
+    .About-txt h1 {
+        color: #000;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+
+    .about-flex {
+        gap: 50px;
+    }
+
+    .About-txt h1 span {
+        color: #000;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        text-decoration-line: underline;
+    }
+
+    .About-txt p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+
+    .About-txt button {
+        display: flex;
+        width: 140px;
+        height: 40px;
+        padding: 13px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+        background-color: #D19B43;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .About-txt button a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .About-txt button a i {
+        font-size: 15px;
+    }
+
+    .About-vector {
+        display: flex;
+        justify-content: end;
+        margin-top: -300px;
+        /* margin-left: -100px; */
+    }
+
+    .sec4-boxflex {
+        gap: 20px;
+    }
+
+    .sec4-boxflex h1 {
+        font-size: 16px;
+    }
+
+    .sec4-boxflex p {
+        font-size: 10px;
+    }
+
+    .sec5-txt h1 {
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 160px;
+        text-align: center;
+    }
+
+    .sec5-txt h1 span {
+        color: #d19b43;
+        font-family: Nunito;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hover-info {
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 220px;
+        display: none;
+    }
+
+    .hover-info2 {
+        background-color: #00000086;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 150px;
+        display: none;
+    }
 }
 
-.banner-text1 p {
-    color: rgba(0, 0, 0, 0.86);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-    padding-top: 15px;
-}
-
-.banner-text1 h1 {
-    color: #000;
-    font-family: Nunito;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.banner-text1 h1 span {
-    color: #000;
-    font-family: Nunito;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.banner-text1 svg {
-    position: absolute;
-    margin-left: -8px;
-    margin-top: -10px;
-    width: 160px;
-}
-
-.banner-text1 h6 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: normal;
-}
-
-.banner-text1 button {
-    display: flex;
-    width: 120px;
-    height: 40px;
-    padding: 13px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 3px;
-    background-color: #D19B43;
-    border: none;
-    margin-top: 15px;
-}
-
-.banner-text1 button a {
-    text-decoration: none;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-}
-.banner-text1 button a i{
-    font-size: 15px;
-}
-.star{
-    width: 150px;
-}
-.about-image img{
-    width: 320px;
-}
-
-.About-txt h1 {
-    color: #000;
-    font-family: Nunito;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    letter-spacing: 0.24px;
-}
-.about-flex{
-    gap: 50px;
-}
-
-.About-txt h1 span {
-    color: #000;
-    font-family: Nunito;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 650;
-    line-height: normal;
-    letter-spacing: 0.24px;
-    text-decoration-line: underline;
-}
-
-.About-txt p {
-    color: #000;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-
-.About-txt button {
-    display: flex;
-    width: 140px;
-    height: 40px;
-    padding: 13px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 3px;
-    background-color: #D19B43;
-    border: none;
-    margin-top: 15px;
-}
-
-.About-txt button a {
-    text-decoration: none;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-}
-.About-txt button a i{
-    font-size: 15px;
-}
-
-.About-vector {
-    display: flex;
-    justify-content: end;
-    margin-top: -300px;
-    /* margin-left: -100px; */
-}
-.sec4-boxflex{
-    gap: 20px;
-}
-.sec4-boxflex h1{
-    font-size: 16px;
-}
-.sec4-boxflex p{
-    font-size: 10px;
-}
-.sec5-txt h1{
-    color: #FFF;
-font-family: Nunito;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-padding-top: 160px;
-text-align: center;
-}
-
-.sec5-txt h1 span{
-    color: #d19b43;
-font-family: Nunito;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-.hover-info{
-    background-color: #00000086;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 220px;
-    display: none;   
-}
-.hover-info2{
-    background-color: #00000086;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 150px;
-    display: none;   
-}
-}
-
-@media (max-width: 1000px){
-    .hover-info{
+@media (max-width: 1000px) {
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 200px;
-        display: none;   
+        display: none;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 10px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 140px;
-        display: none;   
+        display: none;
     }
 }
 
@@ -1382,6 +1609,7 @@ line-height: normal;
     .banner {
         margin-top: 200px;
     }
+
     .banner-flex {
         margin-left: 25px;
         display: flex;
@@ -1391,19 +1619,20 @@ line-height: normal;
         gap: 60px;
     }
 
-    .banner-image{
+    .banner-image {
         gap: 10px;
     }
+
     .banner-image img {
         width: 200px;
     }
-    
+
     .ban-img img {
         margin-top: 100px;
         padding: 0px 10px;
         width: 220px;
     }
-    
+
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -1423,7 +1652,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -1434,7 +1663,7 @@ line-height: normal;
         padding-top: 15px;
         text-align: center;
     }
-    
+
     .banner-text1 h1 {
         color: #000;
         font-family: Nunito;
@@ -1445,7 +1674,7 @@ line-height: normal;
         text-align: center;
 
     }
-    
+
     .banner-text1 h1 span {
         color: #000;
         font-family: Nunito;
@@ -1454,6 +1683,7 @@ line-height: normal;
         font-weight: 700;
         line-height: normal;
     }
+
     .banner-text1 svg {
         position: absolute;
         margin-left: -28px;
@@ -1462,6 +1692,7 @@ line-height: normal;
         text-align: center;
 
     }
+
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -1471,7 +1702,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 150px;
@@ -1487,7 +1718,7 @@ line-height: normal;
         text-align: center;
         margin-left: 200px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -1499,16 +1730,19 @@ line-height: normal;
         line-height: normal;
         padding-top: 20px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 20px;
     }
-    .star{
+
+    .star {
         width: 150px;
     }
-    .about-image img{
+
+    .about-image img {
         width: 500px;
     }
-    
+
     .About-txt h1 {
         color: #000;
         font-family: Nunito;
@@ -1519,14 +1753,16 @@ line-height: normal;
         letter-spacing: 0.24px;
         margin-bottom: 15px;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 50px;
         flex-direction: column;
     }
-    .About-txt{
+
+    .About-txt {
         text-align: center;
     }
-    
+
     .About-txt h1 span {
         color: #000;
         font-family: Nunito;
@@ -1537,7 +1773,7 @@ line-height: normal;
         letter-spacing: 0.24px;
         text-decoration-line: underline;
     }
-    
+
     .About-txt p {
         color: #000;
         font-family: Poppins;
@@ -1547,7 +1783,7 @@ line-height: normal;
         line-height: normal;
         letter-spacing: 0.16px;
     }
-    
+
     .About-txt button {
         display: flex;
         width: 140px;
@@ -1562,7 +1798,7 @@ line-height: normal;
         margin-top: 25px;
         margin-left: 200px;
     }
-    
+
     .About-txt button a {
         text-decoration: none;
         color: #FFF;
@@ -1574,155 +1810,174 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .About-txt button a i{
+
+    .About-txt button a i {
         font-size: 15px;
     }
-    
+
     .About-vector {
         display: flex;
         justify-content: end;
         margin-top: -300px;
         /* margin-left: -100px; */
     }
-    .Feature-vector1{
-       display: none;
+
+    .Feature-vector1 {
+        display: none;
     }
-    .Feature-vector1 img{
+
+    .Feature-vector1 img {
         width: 130px;
     }
-    .section4-txt{
+
+    .section4-txt {
         text-align: center;
         padding-top: 20px;
     }
 
-    .section4-vector{
+    .section4-vector {
         display: none;
     }
-    .sec4-boxtxt{
-       display: inline-flex;
-       gap: 0;
+
+    .sec4-boxtxt {
+        display: inline-flex;
+        gap: 0;
     }
+
     .sec4-boxflex {
         display: inline-grid;
         text-align: center;
         padding-top: 100px;
         gap: 20px;
     }
-    .sec4-boxflex h1{
+
+    .sec4-boxflex h1 {
         font-size: 22px;
     }
-    .sec4-boxflex p{
+
+    .sec4-boxflex p {
         font-size: 15px;
     }
+
     .section4-flex {
         width: 100%;
         height: 135vh;
-       flex-shrink: 20;
+        flex-shrink: 20;
         margin-top: 300px;
         text-align: center;
         background-color: rgba(150, 150, 150, 0.062);
     }
-    .sec4-boxtxt2{
+
+    .sec4-boxtxt2 {
         margin-bottom: 20px;
     }
+
     .more-feactures {
         color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 150px;
-    padding-top: 145px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 150px;
+        padding-top: 145px;
     }
-    .sec5{
+
+    .sec5 {
         margin-top: 570px;
     }
-    .sec5-txt h1{
+
+    .sec5-txt h1 {
         color: #FFF;
-    font-family: Nunito;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    padding-top: 120px;
-    text-align: center;
+        font-family: Nunito;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 120px;
+        text-align: center;
     }
-    
-    .sec5-txt h1 span{
+
+    .sec5-txt h1 span {
         color: #d19b43;
-    font-family: Nunito;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+        font-family: Nunito;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .sec6-text h1{
+
+    .sec6-text h1 {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
-    
-    .sec6-text h1 span{
+
+    .sec6-text h1 span {
         color: #d19b43;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
-    
-    .sec6-text p{
+
+    .sec6-text p {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 9px;
     }
 }
-@media (max-width: 900px){
-    .hover-info{
+
+@media (max-width: 900px) {
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 190px;
-        display: none;   
+        display: none;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 8px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 133px;
-        display: none;   
+        display: none;
     }
 }
-@media (max-width: 800px){
-    .hover-info2{
+
+@media (max-width: 800px) {
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 113px;
-        display: none;   
+        display: none;
     }
 }
 
@@ -1799,6 +2054,7 @@ line-height: normal;
     .banner {
         margin-top: 200px;
     }
+
     .banner-flex {
         margin-left: 25px;
         display: flex;
@@ -1808,19 +2064,20 @@ line-height: normal;
         gap: 60px;
     }
 
-    .banner-image{
+    .banner-image {
         gap: 10px;
     }
+
     .banner-image img {
         width: 150px;
     }
-    
+
     .ban-img img {
         margin-top: 100px;
         padding: 0px 10px;
         width: 170px;
     }
-    
+
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -1840,7 +2097,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -1851,7 +2108,7 @@ line-height: normal;
         padding-top: 15px;
         text-align: center;
     }
-    
+
     .banner-text1 h1 {
         color: #000;
         font-family: Nunito;
@@ -1862,7 +2119,7 @@ line-height: normal;
         text-align: center;
 
     }
-    
+
     .banner-text1 h1 span {
         color: #000;
         font-family: Nunito;
@@ -1871,6 +2128,7 @@ line-height: normal;
         font-weight: 700;
         line-height: normal;
     }
+
     .banner-text1 svg {
         position: absolute;
         margin-left: -35px;
@@ -1879,6 +2137,7 @@ line-height: normal;
         text-align: center;
 
     }
+
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -1888,7 +2147,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 150px;
@@ -1904,7 +2163,7 @@ line-height: normal;
         text-align: center;
         margin-left: 200px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -1916,16 +2175,19 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 20px;
     }
-    .star{
+
+    .star {
         width: 150px;
     }
-    .about-image img{
+
+    .about-image img {
         width: 450px;
     }
-    
+
     .About-txt h1 {
         color: #000;
         font-family: Nunito;
@@ -1936,14 +2198,16 @@ line-height: normal;
         letter-spacing: 0.24px;
         margin-bottom: 15px;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 50px;
         flex-direction: column;
     }
-    .About-txt{
+
+    .About-txt {
         text-align: center;
     }
-    
+
     .About-txt h1 span {
         color: #000;
         font-family: Nunito;
@@ -1954,7 +2218,7 @@ line-height: normal;
         letter-spacing: 0.24px;
         text-decoration-line: underline;
     }
-    
+
     .About-txt p {
         color: #000;
         font-family: Poppins;
@@ -1964,7 +2228,7 @@ line-height: normal;
         line-height: normal;
         letter-spacing: 0.16px;
     }
-    
+
     .About-txt button {
         display: flex;
         width: 140px;
@@ -1979,7 +2243,7 @@ line-height: normal;
         margin-top: 25px;
         margin-left: 200px;
     }
-    
+
     .About-txt button a {
         text-decoration: none;
         color: #FFF;
@@ -1991,166 +2255,186 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .About-txt button a i{
+
+    .About-txt button a i {
         font-size: 15px;
     }
-    
+
     .About-vector {
         display: flex;
         justify-content: end;
         margin-top: -300px;
         /* margin-left: -100px; */
     }
-    .Feature-vector1{
+
+    .Feature-vector1 {
         margin-left: 460px;
     }
-    .Feature-vector1 img{
+
+    .Feature-vector1 img {
         width: 130px;
     }
-    .section4-txt{
+
+    .section4-txt {
         text-align: center;
         padding-top: 20px;
     }
 
-    .section4-vector{
+    .section4-vector {
         display: none;
     }
-    .sec4-boxtxt{
-       display: inline-flex;
+
+    .sec4-boxtxt {
+        display: inline-flex;
     }
+
     .sec4-boxflex {
         display: inline-grid;
         text-align: center;
         padding-top: 100px;
         gap: 20px;
     }
-    .sec4-boxflex h1{
+
+    .sec4-boxflex h1 {
         font-size: 22px;
     }
-    .sec4-boxflex p{
+
+    .sec4-boxflex p {
         font-size: 15px;
     }
+
     .section4-flex {
         width: 100%;
         /* height: 115vh; */
-       flex-shrink: 20;
+        flex-shrink: 20;
         margin-top: 250px;
         text-align: center;
         background-color: rgba(150, 150, 150, 0.062);
     }
-    .sec4-boxtxt2{
+
+    .sec4-boxtxt2 {
         margin-bottom: 20px;
     }
+
     .more-feactures {
         color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 150px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 150px;
     }
 
-    .sec5-txt h1{
+    .sec5-txt h1 {
         color: #FFF;
-    font-family: Nunito;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    padding-top: 120px;
-    text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 120px;
+        text-align: center;
     }
-    
-    .sec5-txt h1 span{
+
+    .sec5-txt h1 span {
         color: #d19b43;
-    font-family: Nunito;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .sec6-text h1{
+
+    .sec6-text h1 {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
-    
-    .sec6-text h1 span{
+
+    .sec6-text h1 span {
         color: #d19b43;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
-    
-    .sec6-text p{
+
+    .sec6-text p {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
-    
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 650px;
         margin: 0 auto;
         grid-auto-rows: minmax(30px auto);
         gap: 10px;
-        margin-top: 50px;   
+        margin-top: 50px;
     }
+
     .grid1 {
         grid-column: 1/4;
         grid-row: 1/35;
     }
-    .grid1 iframe{
+
+    .grid1 iframe {
         width: 100%;
         height: 100%;
     }
+
     .grid2 {
         grid-column: 1/4;
         grid-row: 35/50;
     }
+
     .grid3 {
         grid-column: 1/4;
         grid-row: 50/70;
     }
+
     .grid4 {
         grid-column: 1/4;
         grid-row: 70/90;
     }
-    .hover-info{
+
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 270px;
-        display: none;   
+        display: none;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 20px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 360px;
-        display: none;   
+        display: none;
     }
 }
 
@@ -2228,6 +2512,7 @@ line-height: normal;
     .banner {
         margin-top: 200px;
     }
+
     .banner-flex {
         margin-left: 0px;
         display: flex;
@@ -2237,19 +2522,20 @@ line-height: normal;
         gap: 60px;
     }
 
-    .banner-image{
+    .banner-image {
         gap: 10px;
     }
+
     .banner-image img {
         width: 130px;
     }
-    
+
     .ban-img img {
         margin-top: 100px;
         padding: 0px 10px;
         width: 150px;
     }
-    
+
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -2269,7 +2555,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -2280,7 +2566,7 @@ line-height: normal;
         padding-top: 15px;
         text-align: center;
     }
-    
+
     .banner-text1 h1 {
         color: #000;
         font-family: Nunito;
@@ -2291,7 +2577,7 @@ line-height: normal;
         text-align: center;
 
     }
-    
+
     .banner-text1 h1 span {
         color: #000;
         font-family: Nunito;
@@ -2300,6 +2586,7 @@ line-height: normal;
         font-weight: 700;
         line-height: normal;
     }
+
     .banner-text1 svg {
         position: absolute;
         margin-left: -35px;
@@ -2308,6 +2595,7 @@ line-height: normal;
         text-align: center;
 
     }
+
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -2317,7 +2605,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 130px;
@@ -2333,7 +2621,7 @@ line-height: normal;
         text-align: center;
         margin-left: 170px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -2345,16 +2633,19 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 20px;
     }
-    .star{
+
+    .star {
         width: 150px;
     }
-    .about-image img{
+
+    .about-image img {
         width: 330px;
     }
-    
+
     .About-txt h1 {
         color: #000;
         font-family: Nunito;
@@ -2365,14 +2656,16 @@ line-height: normal;
         letter-spacing: 0.24px;
         margin-bottom: 15px;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 50px;
         flex-direction: column;
     }
-    .About-txt{
+
+    .About-txt {
         text-align: center;
     }
-    
+
     .About-txt h1 span {
         color: #000;
         font-family: Nunito;
@@ -2383,7 +2676,7 @@ line-height: normal;
         letter-spacing: 0.24px;
         text-decoration-line: underline;
     }
-    
+
     .About-txt p {
         color: #000;
         font-family: Poppins;
@@ -2393,7 +2686,7 @@ line-height: normal;
         line-height: normal;
         letter-spacing: 0.16px;
     }
-    
+
     .About-txt button {
         display: flex;
         width: 140px;
@@ -2408,7 +2701,7 @@ line-height: normal;
         margin-top: 25px;
         margin-left: 160px;
     }
-    
+
     .About-txt button a {
         text-decoration: none;
         color: #FFF;
@@ -2420,129 +2713,145 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .About-txt button a i{
+
+    .About-txt button a i {
         font-size: 15px;
     }
-    
+
     .About-vector {
         display: flex;
         justify-content: end;
         margin-top: -290px;
         /* margin-left: -100px; */
     }
-    .About-vector img{
+
+    .About-vector img {
         width: 80px;
     }
- 
-    .section4-txt{
+
+    .section4-txt {
         text-align: center;
         padding-top: 20px;
     }
-    .section4-txt h1{
+
+    .section4-txt h1 {
         font-size: 30px;
     }
-    .section4-txt p{
+
+    .section4-txt p {
         font-size: 14px;
     }
 
-    .section4-vector{
+    .section4-vector {
         display: none;
     }
-    .sec4-boxtxt{
-       display: inline-flex;
+
+    .sec4-boxtxt {
+        display: inline-flex;
     }
+
     .sec4-boxflex {
         display: inline-grid;
         text-align: center;
         padding-top: 100px;
         gap: 20px;
     }
-    .sec4-boxflex h1{
+
+    .sec4-boxflex h1 {
         font-size: 20px;
     }
-    .sec4-boxflex p{
+
+    .sec4-boxflex p {
         font-size: 13px;
     }
+
     .section4-flex {
         width: 100%;
         /* height: 115vh; */
-       flex-shrink: 20;
+        flex-shrink: 20;
         margin-top: 250px;
         text-align: center;
         background-color: rgba(150, 150, 150, 0.062);
     }
-    .sec4-boxtxt2{
+
+    .sec4-boxtxt2 {
         margin-bottom: 20px;
     }
+
     .more-feactures {
         color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 150px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 150px;
     }
 
-    .sec5-txt h1{
+    .sec5-txt h1 {
         color: #FFF;
-    font-family: Nunito;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    padding-top: 100px;
-    text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 100px;
+        text-align: center;
     }
-    
-    .sec5-txt h1 span{
+
+    .sec5-txt h1 span {
         color: #d19b43;
-    font-family: Nunito;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .sec6-text p{
+
+    .sec6-text p {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 500px;
         margin: 0 auto;
         grid-auto-rows: minmax(30px auto);
         gap: 10px;
-        margin-top: 50px;   
+        margin-top: 50px;
     }
-    .hover-info{
+
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 210px;
-        display: none;   
+        display: none;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 16px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 280px;
-        display: none;   
+        display: none;
     }
 }
 
@@ -2550,13 +2859,13 @@ line-height: normal;
     .banner-image img {
         width: 110px;
     }
-    
+
     .ban-img img {
         margin-top: 100px;
         padding: 0px 10px;
         width: 130px;
     }
-    
+
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -2576,7 +2885,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -2587,7 +2896,7 @@ line-height: normal;
         padding-top: 15px;
         text-align: center;
     }
-    
+
     .banner-text1 h1 {
         color: #000;
         font-family: Nunito;
@@ -2598,7 +2907,7 @@ line-height: normal;
         text-align: center;
 
     }
-    
+
     .banner-text1 h1 span {
         color: #000;
         font-family: Nunito;
@@ -2607,6 +2916,7 @@ line-height: normal;
         font-weight: 700;
         line-height: normal;
     }
+
     .banner-text1 svg {
         position: absolute;
         margin-left: -6px;
@@ -2615,6 +2925,7 @@ line-height: normal;
         text-align: center;
 
     }
+
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -2624,7 +2935,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 130px;
@@ -2640,7 +2951,7 @@ line-height: normal;
         text-align: center;
         margin-left: 150px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -2652,16 +2963,19 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 20px;
     }
-    .star{
+
+    .star {
         width: 120px;
     }
-    .about-image img{
+
+    .about-image img {
         width: 300px;
     }
-    
+
     .About-txt h1 {
         color: #000;
         font-family: Nunito;
@@ -2672,14 +2986,16 @@ line-height: normal;
         letter-spacing: 0.24px;
         margin-bottom: 15px;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 50px;
         flex-direction: column;
     }
-    .About-txt{
+
+    .About-txt {
         text-align: center;
     }
-    
+
     .About-txt h1 span {
         color: #000;
         font-family: Nunito;
@@ -2690,7 +3006,7 @@ line-height: normal;
         letter-spacing: 0.24px;
         text-decoration-line: underline;
     }
-    
+
     .About-txt p {
         color: #000;
         font-family: Poppins;
@@ -2700,7 +3016,7 @@ line-height: normal;
         line-height: normal;
         letter-spacing: 0.16px;
     }
-    
+
     .About-txt button {
         display: flex;
         width: 130px;
@@ -2715,7 +3031,7 @@ line-height: normal;
         margin-top: 25px;
         margin-left: 120px;
     }
-    
+
     .About-txt button a {
         text-decoration: none;
         color: #FFF;
@@ -2727,91 +3043,103 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .About-txt button a i{
+
+    .About-txt button a i {
         font-size: 13px;
     }
-    
+
     .About-vector {
         display: flex;
         justify-content: end;
         margin-top: -270px;
         /* margin-left: -100px; */
     }
-    .About-vector img{
+
+    .About-vector img {
         width: 80px;
     }
-    .section4-flex{
+
+    .section4-flex {
         height: 110vh;
     }
-    .section4-txt h1{
+
+    .section4-txt h1 {
         font-size: 28px;
     }
-    .section4-txt p{
-        font-size: 12px;
-    }
-    .sec4-boxflex h1{
-        font-size: 18px;
-    }
-    .sec4-boxflex p{
+
+    .section4-txt p {
         font-size: 12px;
     }
 
-    .sec5-txt h1{
+    .sec4-boxflex h1 {
+        font-size: 18px;
+    }
+
+    .sec4-boxflex p {
+        font-size: 12px;
+    }
+
+    .sec5-txt h1 {
         color: #FFF;
-    font-family: "Nunito";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    padding-top: 90px;
-    text-align: center;
+        font-family: "Nunito";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 90px;
+        text-align: center;
     }
-    
-    .sec5-txt h1 span{
+
+    .sec5-txt h1 span {
         color: #d19b43;
-    font-family: "Nunito";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+        font-family: "Nunito";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .sec6-text p{
+
+    .sec6-text p {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size:10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 450px;
         margin: 0 auto;
         grid-auto-rows: minmax(30px auto);
         gap: 10px;
-        margin-top: 50px;   
-    } 
-    .hover-info{
+        margin-top: 50px;
+    }
+
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 190px;
-        display: none;   
+        display: none;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 14px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 255px;
-        display: none;   
+        display: none;
     }
 
 }
@@ -2821,13 +3149,13 @@ line-height: normal;
     .banner-image img {
         width: 100px;
     }
-    
+
     .ban-img img {
         margin-top: 100px;
         padding: 0px 10px;
         width: 120px;
     }
-    
+
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -2847,7 +3175,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -2868,7 +3196,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 120px;
@@ -2896,16 +3224,19 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 15px;
     }
-    .star{
+
+    .star {
         width: 120px;
     }
-    .about-image img{
+
+    .about-image img {
         width: 280px;
     }
-    
+
     .About-txt h1 {
         color: #000;
         font-family: Nunito;
@@ -2916,14 +3247,16 @@ line-height: normal;
         letter-spacing: 0.24px;
         margin-bottom: 15px;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 50px;
         flex-direction: column;
     }
-    .About-txt{
+
+    .About-txt {
         text-align: center;
     }
-    
+
     .About-txt h1 span {
         color: #000;
         font-family: Nunito;
@@ -2934,7 +3267,7 @@ line-height: normal;
         letter-spacing: 0.24px;
         text-decoration-line: underline;
     }
-    
+
     .About-txt p {
         color: #000;
         font-family: Poppins;
@@ -2944,7 +3277,7 @@ line-height: normal;
         line-height: normal;
         letter-spacing: 0.16px;
     }
-    
+
     .About-txt button {
         display: flex;
         width: 120px;
@@ -2959,7 +3292,7 @@ line-height: normal;
         margin-top: 25px;
         margin-left: 90px;
     }
-    
+
     .About-txt button a {
         text-decoration: none;
         color: #FFF;
@@ -2971,113 +3304,129 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .About-txt button a i{
+
+    .About-txt button a i {
         font-size: 13px;
     }
-    
+
     .About-vector {
         display: flex;
         justify-content: end;
         margin-top: -240px;
         /* margin-left: -100px; */
     }
-    .About-vector img{
+
+    .About-vector img {
         width: 70px;
     }
-    .section4-txt{
+
+    .section4-txt {
         padding-left: 0;
     }
-    .section4-txt h1{
+
+    .section4-txt h1 {
         font-size: 26px;
     }
-    .section4-txt p{
+
+    .section4-txt p {
         font-size: 10px;
     }
-    .section4-flex{
+
+    .section4-flex {
         height: 95vh;
         margin-top: 200px;
     }
-    .sec4-boxflex{
+
+    .sec4-boxflex {
         margin-top: 0;
     }
-    .sec4-boxflex h1{
+
+    .sec4-boxflex h1 {
         font-size: 16px;
     }
-    .sec4-boxflex p{
+
+    .sec4-boxflex p {
         font-size: 10px;
     }
+
     .more-feactures {
         color: #000;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 150px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 150px;
     }
 
-    .sec5-txt h1{
+    .sec5-txt h1 {
         color: #FFF;
-    font-family: Nunito;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    padding-top: 90px;
-    text-align: center;
+        font-family: Nunito;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 90px;
+        text-align: center;
     }
-    
-    .sec5-txt h1 span{
+
+    .sec5-txt h1 span {
         color: #d19b43;
-    font-family: Nunito;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+        font-family: Nunito;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .sec6-text p{
+
+    .sec6-text p {
         color: #000;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 400px;
         margin: 0 auto;
         grid-auto-rows: minmax(30px auto);
         gap: 10px;
-        margin-top: 50px;   
+        margin-top: 50px;
     }
-    .hover-info{
+
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 170px;
-        display: none;   
+        display: none;
     }
-    .hover-info p{
+
+    .hover-info p {
         font-size: 14px;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 14px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 225px;
-        display: none;   
+        display: none;
     }
 }
 
@@ -3085,13 +3434,13 @@ line-height: normal;
     .banner-image img {
         width: 70px;
     }
-    
+
     .ban-img img {
         margin-top: 40px;
         padding: 0px 10px;
         width: 90px;
     }
-    
+
     .banner-text1 h5 {
         color: rgba(209, 155, 67, 0.75);
         font-family: Poppins;
@@ -3111,7 +3460,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -3122,7 +3471,7 @@ line-height: normal;
         padding-top: 15px;
         text-align: center;
     }
-    
+
     .banner-text1 h1 {
         color: #000;
         font-family: Nunito;
@@ -3133,7 +3482,7 @@ line-height: normal;
         text-align: center;
 
     }
-    
+
     .banner-text1 h1 span {
         color: #000;
         font-family: Nunito;
@@ -3142,6 +3491,7 @@ line-height: normal;
         font-weight: 700;
         line-height: normal;
     }
+
     .banner-text1 svg {
         position: absolute;
         margin-left: -5px;
@@ -3150,6 +3500,7 @@ line-height: normal;
         text-align: center;
 
     }
+
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -3159,7 +3510,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 100px;
@@ -3175,7 +3526,7 @@ line-height: normal;
         text-align: center;
         margin-left: 100px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -3187,16 +3538,19 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 13px;
     }
-    .star{
+
+    .star {
         width: 100px;
     }
-    .about-image img{
+
+    .about-image img {
         width: 250px;
     }
-    
+
     .About-txt h1 {
         color: #000;
         font-family: Nunito;
@@ -3207,14 +3561,16 @@ line-height: normal;
         letter-spacing: 0.24px;
         margin-bottom: 15px;
     }
-    .about-flex{
+
+    .about-flex {
         gap: 50px;
         flex-direction: column;
     }
-    .About-txt{
+
+    .About-txt {
         text-align: center;
     }
-    
+
     .About-txt h1 span {
         color: #000;
         font-family: Nunito;
@@ -3225,7 +3581,7 @@ line-height: normal;
         letter-spacing: 0.24px;
         text-decoration-line: underline;
     }
-    
+
     .About-txt p {
         color: #000;
         font-family: Poppins;
@@ -3235,7 +3591,7 @@ line-height: normal;
         line-height: normal;
         letter-spacing: 0.16px;
     }
-    
+
     .About-txt button {
         display: flex;
         width: 110px;
@@ -3250,7 +3606,7 @@ line-height: normal;
         margin-top: 25px;
         margin-left: 70px;
     }
-    
+
     .About-txt button a {
         text-decoration: none;
         color: #FFF;
@@ -3262,86 +3618,102 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .About-txt button a i{
+
+    .About-txt button a i {
         font-size: 11px;
     }
-    
+
     .About-vector {
         display: flex;
         justify-content: end;
         margin-top: -200px;
         /* margin-left: -100px; */
     }
-    .About-vector img{
+
+    .About-vector img {
         width: 50px;
     }
-    .section4-txt{
+
+    .section4-txt {
         padding-left: 0;
     }
-    .section4-txt h1{
+
+    .section4-txt h1 {
         font-size: 24px;
     }
-    .section4-txt p{
+
+    .section4-txt p {
         font-size: 8px;
     }
-    .sec4-boxflex{
+
+    .sec4-boxflex {
         margin-top: 0;
     }
-    .sec4-boxflex h1{
+
+    .sec4-boxflex h1 {
         font-size: 14px;
     }
-    .sec4-boxflex p{
+
+    .sec4-boxflex p {
         font-size: 8px;
     }
+
     .more-feactures {
         color: #000;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 150px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 150px;
     }
-    .section4-flex{
+
+    .section4-flex {
         height: 85vh;
         margin-top: 180px;
     }
-    .sec5{
+
+    .sec5 {
         margin-top: 485px;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 350px;
         margin: 0 auto;
         grid-auto-rows: minmax(30px auto);
         gap: 10px;
-        margin-top: 50px;   
+        margin-top: 50px;
     }
-    .hover-info{
+
+    .hover-info {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 150px;
-        display: none;   
+        display: none;
     }
-    .hover-info p{
+
+    .hover-info p {
         font-size: 12px;
     }
-    .hover-info2 p{
+
+    .hover-info2 p {
         font-size: 12px;
     }
-    .hover-info2{
+
+    .hover-info2 {
         background-color: #00000086;
         position: relative;
         width: 100%;
         height: 100%;
         bottom: 200px;
-        display: none;   
+        display: none;
     }
 }
 
@@ -3365,7 +3737,7 @@ line-height: normal;
         background: rgba(181, 57, 57, 0.10);
         box-shadow: 0px 1px 3px 0px rgba(199, 199, 199, 0.25) inset;
     }
-    
+
     .banner-text1 p {
         color: rgba(0, 0, 0, 0.86);
         font-family: Poppins;
@@ -3376,7 +3748,7 @@ line-height: normal;
         padding-top: 15px;
         text-align: center;
     }
-    
+
     .banner-text1 h1 {
         color: #000;
         font-family: Nunito;
@@ -3387,7 +3759,7 @@ line-height: normal;
         text-align: center;
 
     }
-    
+
     .banner-text1 h1 span {
         color: #000;
         font-family: Nunito;
@@ -3396,6 +3768,7 @@ line-height: normal;
         font-weight: 700;
         line-height: normal;
     }
+
     .banner-text1 svg {
         position: absolute;
         margin-left: -5px;
@@ -3404,6 +3777,7 @@ line-height: normal;
         text-align: center;
 
     }
+
     .banner-text1 h6 {
         color: #000;
         font-family: Poppins;
@@ -3413,7 +3787,7 @@ line-height: normal;
         line-height: normal;
         text-align: center;
     }
-    
+
     .banner-text1 button {
         display: flex;
         width: 95px;
@@ -3429,7 +3803,7 @@ line-height: normal;
         text-align: center;
         margin-left: 90px;
     }
-    
+
     .banner-text1 button a {
         text-decoration: none;
         color: #FFF;
@@ -3441,89 +3815,101 @@ line-height: normal;
         line-height: normal;
         padding-top: 25px;
     }
-    .banner-text1 button a i{
+
+    .banner-text1 button a i {
         font-size: 11px;
     }
-    .star{
+
+    .star {
         width: 80px;
     }
-  .more-feactures p a{
-    font-size: 7px;
-  }
-  .section4-flex{
-    height: 160vh;
-  }
-  .sec5{
-    margin-top: 35px;
-}
-.sec5-txt h1{
-    font-size: 10px;
-    padding-top: 80px;
-}
-.sec5-txt h1 span{
-    font-size: 10px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 300px;
-    margin: 0 auto;
-    grid-auto-rows: minmax(30px auto);
-    gap: 10px;
-    margin-top: 50px;   
-}
+
+    .more-feactures p a {
+        font-size: 7px;
+    }
+
+    .section4-flex {
+        height: 160vh;
+    }
+
+    .sec5 {
+        margin-top: 35px;
+    }
+
+    .sec5-txt h1 {
+        font-size: 10px;
+        padding-top: 80px;
+    }
+
+    .sec5-txt h1 span {
+        font-size: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 300px;
+        margin: 0 auto;
+        grid-auto-rows: minmax(30px auto);
+        gap: 10px;
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 314px) {
-    .section4-flex{
+    .section4-flex {
         height: 140vh;
-      }
-      .more-feactures {
-        color: #000;
-    font-family: Poppins;
-    font-size: 8px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 150px;
     }
 
-    .sec5-txt h1{
+    .more-feactures {
+        color: #000;
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 150px;
+    }
+
+    .sec5-txt h1 {
         color: #FFF;
-    font-family: Nunito;
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    padding-top: 80px;
-    text-align: center;
+        font-family: Nunito;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        padding-top: 80px;
+        text-align: center;
     }
-    
-    .sec5-txt h1 span{
+
+    .sec5-txt h1 span {
         color: #d19b43;
-    font-family: Nunito;
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+        font-family: Nunito;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .sec5{
+
+    .sec5 {
         margin-top: 155px;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 280px;
         margin: 0 auto;
         grid-auto-rows: minmax(30px auto);
         gap: 10px;
-        margin-top: 50px;   
+        margin-top: 50px;
     }
 }
+
 /* @media (max-width: 314px) {
     .sec5-image img{
         width: 100%;
