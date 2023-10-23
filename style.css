@@ -3692,6 +3692,12 @@ line-height: normal;
     .sec5 {
         margin-top: 485px;
     }
+    .sec6-text{
+        margin-top: 50px;
+    }
+    .sec6-text p{
+        font-size: 6px;
+    }
 
     .grid {
         display: grid;
@@ -3727,6 +3733,88 @@ line-height: normal;
         height: 100%;
         bottom: 200px;
         display: none;
+    }
+    .footer-input input {
+        width: 160px;
+        height: 40px;
+        border: 1px solid #0000001e;
+        background: none;
+        padding-left: 20px;
+    }
+    
+    .footer-input::placeholder {
+        color: #535353;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .footer-input button {
+        width: 120px;
+        height: 40px;
+        background-color: #d19b43;
+        border: none;
+    }
+    
+    .footer-input button a {
+        color: #FFF;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    .footer-bg p {
+        color: #000000;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 40px;
+    }
+    
+    .footer-link p {
+        color: #1E1E1E;
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .footer-link ul li{
+        padding: 10px 0px;
+    }
+    .footer-link ul li a{
+        color: #000000;
+        font-family: 'Poppins';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .footer-link ul li a:hover{
+        color: #d19b43;
+    }
+    
+    .footer-link button{
+        width: 90px;
+        height: 40px;
+        background-color: #d19b43;
+        border: none;
+        margin-top: 10px;
+    }
+    
+    .footer-link button a {
+        color: #FFF;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     }
 }
 
