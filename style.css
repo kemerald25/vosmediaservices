@@ -3925,7 +3925,7 @@ line-height: normal;
     }
 
     .star {
-        width: 80px;
+        display: none;
     }
 
     .more-feactures p a {
