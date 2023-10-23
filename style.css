@@ -3770,7 +3770,7 @@ line-height: normal;
     .footer-bg p {
         color: #000000;
         font-family: 'Poppins';
-        font-size: 12px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -3815,6 +3815,9 @@ line-height: normal;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+    }
+    .footer-text p{
+        font-size: 12px;
     }
 }
 
