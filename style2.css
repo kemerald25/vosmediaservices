@@ -4,7 +4,7 @@
 
 * {
     padding: 0;
-    margin: 0%;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'poppins';
     scroll-behavior: smooth;
@@ -18,4 +18,40 @@ body {
     background-color: #F6FCFF;
     background-image: url('img/Background.png');
     width: 100%;
+}
+
+.about-img img{
+  margin-top: 90px;
+  position: relative;
+  width: 100%;
+}
+.About-txt{
+    display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+align-items: center;
+}
+
+.About-txt p{
+    color: #FFF;
+text-align: center;
+font-family: 'Poppins';
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.32px;
+position: absolute;
+top: 400px;
+}
+.About-txt p span{
+    color: #FFF;
+font-family: 'Poppins';
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.48px;
+text-decoration-line: underline;
 }
