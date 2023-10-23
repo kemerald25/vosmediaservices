@@ -3557,7 +3557,7 @@ line-height: normal;
     }
 
     .star {
-        width: 50px;
+       display: none;
     }
 
     .about-image img {
