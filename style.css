@@ -530,6 +530,9 @@ a:hover {
     background-color: rgba(70, 80, 130, 0.67);
     box-shadow: 1px 1px 14px 0px rgba(245, 245, 245, 0.66);
 }
+.sec4-boxflex i{
+    color: #ffffff;
+}
 
 .sec4-boxtxt h1 {
     color: #FFF;
