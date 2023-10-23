@@ -1,0 +1,235 @@
+@media screen and (max-width: 1200px) {
+    .all-services{
+        width: 300px;
+        height: 350px; 
+    }
+    .second-sect{
+        max-width: 1050px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 30px;
+    }
+    .third-sect{
+        max-width: 1050px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .all-services{
+        width: 280px;
+        height: 400px; 
+    }
+    .second-sect{
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 50px;
+    }
+    .third-sect{
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .blog-img{
+        width: 500px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .all-services{
+        width: 280px;
+        height: 400px; 
+    }
+    .second-sect{
+        max-width: 750px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 50px;
+       flex-wrap: wrap;
+    }
+    .third-sect{
+        max-width: 750px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .blog-img{
+        width: 500px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .all-services{
+        width: 280px;
+        height: 400px; 
+    }
+    .second-sect{
+        max-width: 650px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 50px;
+       flex-wrap: wrap;
+    }
+    .third-sect{
+        max-width: 650px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .blog-img{
+        width: 500px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .all-services{
+        width: 280px;
+        height: 400px; 
+    }
+    .second-sect{
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 50px;
+       flex-wrap: wrap;
+    }
+    .third-sect{
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .blog-img{
+        width: 500px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .abt h2{
+        font-size: 30px;
+    }
+    br{
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .all-services{
+        width: 280px;
+        height: 400px; 
+    }
+    .second-sect{
+        max-width: 280px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 50px;
+       flex-wrap: wrap;
+    }
+    .third-sect{
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .blog-img{
+        width: 280px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .abt h2{
+        font-size: 30px;
+        width: 280px;
+    }
+    .abt p{
+        width: 280px;
+    }
+    br{
+        display: none;
+    }
+}
+@media screen and (max-width: 280px) {
+    .all-services{
+        width: 280px;
+        height: 550px; 
+    }
+    .second-sect{
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .services{
+        justify-content: center;
+       gap: 50px;
+       flex-wrap: wrap;
+    }
+    .third-sect{
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .blog-img{
+        width: 200px;
+    }
+    .abt{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .abt h2{
+        font-size: 30px;
+        width: 200px;
+    }
+    .abt p{
+        width: 200px;
+    }
+    br{
+        display: none;
+    }
+}

@@ -89,3 +89,25 @@ body {
 .all-services p{
     font-size: 13px;
 }
+.blog-img{
+    width: 700px;
+}
+.blog-img img{
+    width: 100%;
+}
+.third-sect{
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.abt{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.abt h2{
+    font-size: 35px;
+}
+.abt p{
+    font-size: 12px;
+}
