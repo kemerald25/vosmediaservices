@@ -53,6 +53,33 @@
     
 }
 @media screen and (max-width: 900px) {
+    .About-txt p {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        position: absolute;
+        top: 400px;
+    }
+
+    .About-txt p span {
+        color: #FFF;
+        font-family: 'Poppins';
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        text-decoration-line: underline;
+    }
+
+    .About-txt p{
+        top: 300px;
+    }
     .all-services{
         width: 280px;
         height: 400px; 
@@ -83,6 +110,7 @@
         text-align: center;
     }
 }
+
 @media screen and (max-width: 768px) {
     .all-services{
         width: 280px;
@@ -114,7 +142,51 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 640px){
+    .About-txt p {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        position: absolute;
+        top: 200px;
+    }
+
+    .About-txt p span {
+        color: #FFF;
+        font-family: 'Poppins';
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        text-decoration-line: underline;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+    .About-txt p {
+        font-size: 25px;
+    }
+    .About-txt p span {
+        font-size: 39px;
+    }
+}
+
 @media screen and (max-width: 425px) {
+    .About-txt p {
+        font-size: 21px;
+        top: 190px;
+    }
+    .About-txt p span {
+        font-size: 31px;
+    }
     .all-services{
         width: 280px;
         height: 400px; 
@@ -149,6 +221,16 @@
     }
     br{
         display: none;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .About-txt p {
+        font-size: 20px;
+        top: 150px;
+    }
+    .About-txt p span {
+        font-size: 29px;
     }
 }
 @media screen and (max-width: 320px) {
@@ -193,6 +275,13 @@
     }
 }
 @media screen and (max-width: 280px) {
+    .About-txt p {
+        font-size: 18px;
+        top: 130px;
+    }
+    .About-txt p span {
+        font-size: 26px;
+    }
     .all-services{
         width: 280px;
         height: 550px; 
@@ -231,5 +320,14 @@
     }
     br{
         display: none;
+    }
+}
+@media screen and (max-width: 230px){
+    .About-txt p {
+        font-size: 15px;
+        top: 120px;
+    }
+    .About-txt p span {
+        font-size: 22px;
     }
 }

@@ -94,6 +94,8 @@ body {
 }
 .blog-img img{
     width: 100%;
+    border: 5px solid #d19b43;
+    border-radius: 20px 5px 20px 5px;
 }
 .third-sect{
     max-width: 1150px;
@@ -104,9 +106,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 100px;
+    align-items: center;
 }
 .abt h2{
     font-size: 35px;
+    padding-bottom: 10px;
 }
 .abt p{
     font-size: 12px;
