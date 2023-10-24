@@ -112,6 +112,9 @@ body {
     font-size: 35px;
     padding-bottom: 10px;
 }
+.abt h2 span{
+    color: #d19b43;
+}
 .abt p{
     font-size: 12px;
 }
