@@ -177,6 +177,13 @@
     .About-txt p span {
         font-size: 39px;
     }
+    .blog-img img{
+        width: 80%;
+    }
+}@media screen and (max-width: 480px){
+    .blog-img img{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 425px) {
