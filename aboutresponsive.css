@@ -109,6 +109,11 @@
         flex-wrap: wrap;
         text-align: center;
     }
+    .third-sect{
+        max-width: 1150px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -140,6 +145,11 @@
         gap: 50px;
         flex-wrap: wrap;
         text-align: center;
+    }
+    .third-sect{
+        max-width: 1150px;
+        margin: 0 auto;
+        margin-top: 60px;
     }
 }
 
@@ -173,6 +183,7 @@
 @media screen and (max-width: 540px){
     .About-txt p {
         font-size: 25px;
+        top: 150px;
     }
     .About-txt p span {
         font-size: 39px;
@@ -189,7 +200,7 @@
 @media screen and (max-width: 425px) {
     .About-txt p {
         font-size: 21px;
-        top: 190px;
+        top: 170px;
     }
     .About-txt p span {
         font-size: 31px;
@@ -211,7 +222,7 @@
     .third-sect{
         max-width: 320px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .blog-img{
         width: 500px;
@@ -258,7 +269,7 @@
     .third-sect{
         max-width: 320px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .blog-img{
         width: 280px;
@@ -306,7 +317,7 @@
     .third-sect{
         max-width: 200px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 40px;
     }
     .blog-img{
         width: 200px;
@@ -336,5 +347,10 @@
     }
     .About-txt p span {
         font-size: 22px;
+    }
+    .third-sect{
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
