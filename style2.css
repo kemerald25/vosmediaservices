@@ -118,3 +118,22 @@ body {
 .abt p{
     font-size: 12px;
 }
+
+
+
+
+
+
+
+
+
+.contact-text{
+    text-align: center;
+    margin-top: 200px;
+    font-family:"Nunito";
+}
+.contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
