@@ -5,6 +5,7 @@
     background: #e7e7e7;
     background-size: cover;
     background-position: center;
+    margin-top: 0 !important;
 }
 
 .banner-upload-btn{
@@ -56,6 +57,7 @@ textarea::-webkit-scrollbar-thumb{
     border: none;
     padding: 10px;
     border-radius: 10px;
+    background: none;
 }
 
 .title::placeholder,
