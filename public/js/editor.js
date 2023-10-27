@@ -49,6 +49,11 @@ const addImage = (imagepath, alt) => {
 
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+        const MongoClient = ('mongodb').MongoClient;
+        const db = client.db(dbName);
+        const collection = db.collection('blog');
+
+
 publishBtn.addEventListener('click', () => {
     if(articleFeild.value.length && blogTitleField.value.length){
         // generating id
@@ -62,9 +67,8 @@ publishBtn.addEventListener('click', () => {
         // setting up docName
         let docName = `${blogTitle}-${id}`;
         let date = new Date(); // for published at info
-
-        //access firstore with db variable;
-        db.collection("blogs").doc(docName).set({
+        
+        db.collection("blog").doc(docName).set({
             title: blogTitleField.value,
             article: articleFeild.value,
             bannerImage: bannerPath,
@@ -79,3 +83,9 @@ publishBtn.addEventListener('click', () => {
         })
     }
 })
+
+
+
+
+
+
