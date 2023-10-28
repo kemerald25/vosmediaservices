@@ -11,8 +11,8 @@
 //     measurementId: "G-MSVV9TTQSY",
 // };
 // // Initialize Firebase
+// // firebase.initializeApp(firebaseConfig);
 // const app = initializeApp(firebaseConfig);
-// const db = getFirestore(app);
-// // firebase.initializeApp(firebaseConfig); 
-
-// // let db = firebase.firestore();
+// const db = firebase.firestore();
+// const storage = firebase.storage();
+// const analytics = getAnalytics(app);
