@@ -1,0 +1,39 @@
+.contact-text h1{
+    font-size: 30px;
+    font-family: 'poppins' sans-serif;
+    font-weight: 600;
+}
+form input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    width: 500px;
+}
+input::placeholder{
+    font-size: 15px;
+    color: #000000a7;
+}
+input::selection{
+    background-color: #000;
+    color: #fff;
+}
+form textarea{
+    width: 500px;
+    background-color: transparent;
+    outline: none;
+}
+textarea::placeholder{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    resize: unset;
+}
+form button{
+    padding: 10px 25px;
+    background-color: #D19B43;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
