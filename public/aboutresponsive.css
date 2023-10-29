@@ -191,9 +191,21 @@
     .blog-img img{
         width: 80%;
     }
+    form{
+        max-width: 400px;
+    }
+    .contact-text h1{
+        text-wrap: 40px;
+    }
 }@media screen and (max-width: 480px){
     .blog-img img{
         width: 80%;
+    }
+    form{
+        max-width: 300px;
+    }
+    .contact-text h1{
+        text-wrap: 40px;
     }
 }
 
@@ -240,6 +252,12 @@
     br{
         display: none;
     }
+   hr{
+    margin-top: 100px;
+   }
+   form input{
+    height: 50px;
+   }
 }
 
 @media screen and (max-width: 360px){
@@ -291,6 +309,12 @@
     br{
         display: none;
     }
+    hr{
+        margin-top: 50px;
+       }
+       form {
+        width: 280px;
+       }
 }
 @media screen and (max-width: 280px) {
     .About-txt p {
@@ -339,6 +363,12 @@
     br{
         display: none;
     }
+    hr{
+        margin-top: 40px;
+       }
+       form {
+        width: 250px;
+       }
 }
 @media screen and (max-width: 230px){
     .About-txt p {
