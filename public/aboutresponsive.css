@@ -177,6 +177,13 @@
         letter-spacing: 0.48px;
         text-decoration-line: underline;
     }
+    .blogs-section{
+        width: 100%;
+        padding: 50px 5vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 80px;
+    }
 
 }
 
