@@ -53,8 +53,8 @@ function setupRoutes(client) {
                 res.status(500).json({ error: 'Failed to save blog post' });
             }
         } catch (error) {
-            console.error('Error saving blog post:', error);
-            res.status(500).json({ error: 'Failed to save blog post' });
+            // console.error('Error saving blog post:', error);
+            // res.status(500).json({ error: 'Failed to save blog post' });
         }
     });
 

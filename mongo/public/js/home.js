@@ -1,8 +1,8 @@
 // Import required MongoDB module
-const { MongoClient } = require('mongodb');
+const MongoClient = require('mongodb').MongoClient;
 
 // MongoDB connection URI
-const uri = 'mongodb+srv://unityekeoba18:Devroyale2005@cluster0.0tjsbja.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://vosmediaservices:vosdatabase@clustervos.jmm0mao.mongodb.net/blog';
 
 // Function to retrieve and display blogs on the home page
 const displayBlogs = async () => {
@@ -12,7 +12,7 @@ const displayBlogs = async () => {
     await client.connect();
 
     // Access the 'blogs' collection in MongoDB
-    const database = client.db('<database>'); // Replace '<database>' with your actual database name
+    const database = client.db('blog'); // Replace '<database>' with your actual database name
     const collection = database.collection('blogs');
 
     // Find all documents in the 'blogs' collection

@@ -82,7 +82,7 @@ publishBtn.addEventListener('click', () => {
             .then(() => {
                 console.log("Blog post published");
                 // Redirect to the newly created blog post page
-                // window.location.href = `/${docName}`;
+                window.location.href = `/${docName}`;
 
             })
             .catch((err) => {
