@@ -1,51 +1,34 @@
-const MongoClient = require('mongodb').MongoClient;
-
-// MongoDB connection URI
-const uri = 'mongodb+srv://vosmediaservices:vosdatabase@clustervos.jmm0mao.mongodb.net/blog';
-
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Get blogId from location pathname
         const blogId = decodeURI(location.pathname.split("/").pop());
 
-        // Connect to MongoDB
-        const client = await MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-        console.log('Connected to MongoDB');
+        // Fetch blog post data from the server
+        const response = await fetch(`/api/blog/${blogId}`); // Assuming you have an endpoint to fetch a specific blog post
+        const blogPosts = await response.json();
 
-        // Access 'blogs' collection in MongoDB
-        const db = client.db('blog');
-        const collection = db.collection('blogs');
-
-        // Find document with matching blogId
-        const blogPost = await collection.findOne({ blogId });
-
-        if (blogPost) {
-            setupBlog(blogPost);
+        if (blogPosts) {
+            setupBlog(blogPosts);
         } else {
             location.replace("/");
         }
     } catch (error) {
         console.error(error);
         location.replace("/"); // Redirect to home page in case of an error
-    } finally {
-        // Close MongoDB connection
-        if (client) {
-            client.close();
-        }
     }
 });
 
-function setupBlog(blogPost) {
+function setupBlog(blogPosts) {
     const banner = document.querySelector('.banner');
     const blogTitle = document.querySelector('.title');
     const publish = document.querySelector('.published');
     const article = document.querySelector('.article');
 
     // Set up blog post details in the DOM
-    banner.style.backgroundImage = `url(${blogPost.bannerImage})`;
-    blogTitle.textContent = blogPost.title;
-    publish.textContent = `Published on: ${new Date(blogPost.publishedAt).toLocaleDateString()}`;
-    article.innerHTML = blogPost.article;
+    banner.style.backgroundImage = `url(${blogPosts.bannerImage})`;
+    blogTitle.textContent = blogPosts.title;
+    publish.textContent = `Published on: ${new Date(blogPosts.publishedAt).toLocaleDateString()}`;
+    article.innerHTML = blogPosts.article;
 }
 
 
