@@ -1,81 +1,100 @@
-
-
-const express = require('express');
 const path = require('path');
-const fileupload = require('express-fileupload');
+const fileUpload = require('express-fileupload');
+const bodyParser = require('body-parser')
+const express = require('express')
+const mongoose = require('mongoose')
 const MongoClient = require('mongodb').MongoClient;
-
-const url = 'mongodb://localhost:27017';
-const dbName = 'Blog';
-
-let initial_path = path.join(__dirname, "public");
-
 const app = express();
-app.use(express.static(initial_path));
-app.use(fileupload());
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(initial_path, "home.html"));
-});
-
-app.get('/editor', (req, res) => {
-    res.sendFile(path.join(initial_path, "editor.html"));
-});
-
-
-
-app.get("/:blog", (req, res) => {
-    res.sendFile(path.join(initial_path, "blog.html"));
-});
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(fileUpload());
+app.use(express.json())
 
 
 
 
-
-
-
-let blogData = {
-    title: req.body.title,
-    article: req.body.article,
-    bannerImage: req.body.bannerImage,
-};
-
-MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
-    if (err) {
-        throw err;
+const uri = 'mongodb+srv://vosmediaservices:vosdatabase@clustervos.jmm0mao.mongodb.net/blog';
+const PORT = process.env.PORT || 3000;
+const DOMAIN = 'vosmediaservices.com';
+async function connect() {
+    try {
+        const client = await mongoose.connect(uri)
+        console.log("Connected to MongoDB")
+        setupRoutes(client);
+        app.listen(PORT, () => {
+            console.log('Server is running on http://${DOMAIN}:${PORT}`');
+        });
+    } catch (error) {
+        console.error('Error connecting to MongoDB:', error);
     }
+}
 
-    const db = client.db(dbName);
-    const collection = db.collection('blog');
+function setupRoutes(client) {
+    app.post('/publish', async (req, res) => {
+        console.log("Data received from client:", req.body);
+        const { title, article, bannerImage } = req.body;
+        const client = await MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+        const db = client.db('blog'); // Specify your database name here
+        const blogPosts = db.collection('blogs'); // Specify your collection name here
 
-    collection.insertOne(blogData, (error, result) => {
-        if (error) {
-            throw error;
+        const newBlogPost = {
+            title,
+            article,
+            bannerImage,
+            publishedAt: new Date(),
+        };
+
+        try {
+            const result = await blogPosts.insertOne(newBlogPost, { writeConcern: { w: 'majority' } });
+            console.log('Insertion Result:', result); // Log the entire result object
+            if (result.insertedCount > 0) {
+                console.log('Blog post saved:', result.ops[0]);
+                res.json(result.ops[0]);
+            } else {
+                console.error('Error saving blog post: Insertion failed');
+                res.status(500).json({ error: 'Failed to save blog post' });
+            }
+        } catch (error) {
+            console.error('Error saving blog post:', error);
+            res.status(500).json({ error: 'Failed to save blog post' });
         }
-
-        console.log('Blog data saved to MongoDB:', result.ops[0]);
-        res.json(result.ops[0]); // Send back the saved data to the client
-        client.close();
     });
-});
+
+    app.post('/upload', (req, res) => {
+        let file = req.files.image;
+        let date = new Date();
+        let imagename = date.getDate() + date.getTime() + file.name;
+        let uploadPath = path.join(__dirname, 'public', 'uploads', imagename);
+
+        file.mv(uploadPath, (err) => {
+            if (err) {
+                console.error('Error uploading image:', err);
+                res.status(500).json({ error: 'Failed to upload image' });
+            } else {
+                res.json(`uploads/${imagename}`);
+            }
+        });
+    });
+
+    app.get('/', (req, res) => {
+        res.sendFile(path.join(__dirname, 'index.html'));
+    });
+
+    app.get('/editor', (req, res) => {
+        res.sendFile(path.join(__dirname, 'public', 'editor.html'));
+    });
+
+    app.get("/:blog", async (req, res) => {
+        res.sendFile(path.join(__dirname, 'public', 'blog.html'))
+    });
+
+    app.use((req, res) => {
+        res.status(404).json("Not Found");
+    });
+}
 
 
+connect();
 
-
-
-
-
-
-
-
-
-
-
-
-app.use((req, res) => {
-    res.json("404");
-});
-
-app.listen("3000", () => {
-    console.log('Server is listening on port 3000...');
-});
+// app.listen(8000, () => {
+//     console.log("Server started on port 8000");
+// })

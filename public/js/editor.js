@@ -1,4 +1,3 @@
-
 const blogTitleField = document.querySelector('.title');
 const articleFeild = document.querySelector('.article');
 
@@ -20,7 +19,7 @@ uploadInput.addEventListener('change', () => {
 
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
-    if(file && file.type.includes("image")){
+    if (file && file.type.includes("image")) {
         const formdata = new FormData();
         formdata.append('image', file);
 
@@ -28,64 +27,71 @@ const uploadImage = (uploadFile, uploadType) => {
             method: 'post',
             body: formdata
         }).then(res => res.json())
-        .then(data => {
-            if(uploadType == "image"){
-                addImage(data, file.name);
-            } else{
-                bannerPath = `${location.origin}/${data}`;
-                banner.style.backgroundImage = `url("${bannerPath}")`;
-            }
-        })
-    } else{
-        alert("upload Image only");
+            .then(data => {
+                if (uploadType == "image") {
+                    addImage(data, file.name);
+                } else {
+                    bannerPath = `${location.origin}/${data}`;
+                    banner.style.backgroundImage = `url("${bannerPath}")`;
+                }
+            })
+    } else {
+        alert("Upload Image only");
     }
 }
 
 const addImage = (imagepath, alt) => {
     let curPos = articleFeild.selectionStart;
     let textToInsert = `\r![${alt}](${imagepath})\r`;
-    articleFeild.value = articleFeild.value.slice(0, curPos) + textToInsert + articleFeild.value.slice(curPos);
+    articleFeild.value =
+        articleFeild.value.slice(0, curPos) +
+        textToInsert +
+        articleFeild.value.slice(curPos);
 }
 
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-        const MongoClient = ('mongodb').MongoClient;
-        const db = client.db(dbName);
-        const collection = db.collection('blog');
-
-
 publishBtn.addEventListener('click', () => {
-    if(articleFeild.value.length && blogTitleField.value.length){
+    if (articleFeild.value.length && blogTitleField.value.length) {
         // generating id
         let letters = 'abcdefghijklmnopqrstuvwxyz';
         let blogTitle = blogTitleField.value.split(" ").join("-");
         let id = '';
-        for(let i = 0; i < 4; i++){
+        for (let i = 0; i < 4; i++) {
             id += letters[Math.floor(Math.random() * letters.length)];
         }
 
         // setting up docName
         let docName = `${blogTitle}-${id}`;
         let date = new Date(); // for published at info
-        
-        db.collection("blog").doc(docName).set({
+
+        const dataToSend = {
             title: blogTitleField.value,
             article: articleFeild.value,
             bannerImage: bannerPath,
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
+        };
+        console.log("Data to Send:", dataToSend);
+        fetch('/publish', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataToSend)
         })
-        .then(() => {
-            // location.href = `/${docName}`;
-            console.log("it is done")
-        })
-        .catch((err) => {
-            console.error(err);
-        })
+            .then(() => {
+                console.log("Blog post published");
+                // Redirect to the newly created blog post page
+                window.location.href = `/${docName}`;
+
+            })
+            .catch((err) => {
+                console.error(err);
+            })
     }
+
+    console.log("Title:", dataToSend.title);
+    console.log("Article:", dataToSend.article);
+    console.log("Banner Image:", dataToSend.bannerImage);
+
 })
-
-
-
-
-
-
