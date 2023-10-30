@@ -13,14 +13,15 @@ app.use(express.json())
 
 
 const uri = 'mongodb+srv://vosmediaservices:vosdatabase@clustervos.jmm0mao.mongodb.net/blog';
-
+const PORT = process.env.PORT || 3000;
+const DOMAIN = 'vosmediaservices.com';
 async function connect() {
     try {
         const client = await mongoose.connect(uri)
         console.log("Connected to MongoDB")
         setupRoutes(client);
-        app.listen(8000, () => {
-            console.log('Server is running on port 8000');
+        app.listen(PORT, () => {
+            console.log('Server is running on http://${DOMAIN}:${PORT}`');
         });
     } catch (error) {
         console.error('Error connecting to MongoDB:', error);
@@ -75,7 +76,7 @@ function setupRoutes(client) {
     });
 
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'public', 'home.html'));
+        res.sendFile(path.join(__dirname, 'index.html'));
     });
 
     app.get('/editor', (req, res) => {
