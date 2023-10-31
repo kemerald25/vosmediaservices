@@ -151,6 +151,9 @@
         margin: 0 auto;
         margin-top: 60px;
     }
+    .banner-img{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -183,6 +186,16 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 80px;
+    }
+    .banner{
+        margin-top: 90px !important;
+        background: none;
+        height: 300px !important;
+    }
+    .banner-img{
+        width: 100% !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
     }
 
 }
