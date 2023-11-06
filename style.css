@@ -18,6 +18,8 @@ body {
     background-color: #F6FCFF;
     background-image: url('img/Background.png');
     width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .grid {
@@ -633,10 +635,13 @@ a:hover {
 .sec5-image {
     margin-top: 50px;
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sec5-image img {
     width: 100%;
+   
 }
 
 .sec5-txt h1 {
