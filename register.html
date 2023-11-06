@@ -83,7 +83,8 @@
         <h1 style="font-size: 18px; font-weight: 500;">Register now for the <br> VOS Media Services Conference, </h1>
         <h3 style="font-style: italic; font-size: 30px;"><span
                 style="font-size: 25px; text-decoration: underline;">Theme</span> <br> How to Grow Your business with
-            <br> Digital Marketing.</h3>
+            <br> Digital Marketing.
+        </h3>
     </div>
     <div class="contact">
 
@@ -101,13 +102,23 @@
             <input type="email" id="email" name="email" required placeholder="Business Email"><br><br>
 
             <input type="text" id="address" name="address" placeholder="Company's Address"><br><br>
-            <label for="Request">The Services you need from us:</label>
-            <select name="services[]" id="services" multiple>
-                <option value="Web design">Web Design</option>
-                <option value="Social Media Management">Social Media Management</option>
-                <option value="Online Advertisement">Online Advertisement</option>
-            </select> <br> <br>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Expectations for the conference"></textarea> <br>
+            <label for="Request">The Services you need from us:</label> <br>
+            <!-- <select name="services[]" id="services" multiple> -->
+            <div>
+                <label for="web design">Web Design</label>
+                <input style="width: auto; margin-left: 20px; height: auto;" type="checkbox" name="Web Design" id=""><br>
+            </div>
+            <div>
+                <label for="social media management">Social Media Management</label>
+                <input style="width: auto; margin-left: 20px; height: auto;" type="checkbox" name="Social media management"><br>
+            </div>
+            <div>
+                <label for="Online Advertisement">Online Advertisement</label>
+                <input style="width: auto; margin-left: 20px; height: auto;" type="checkbox" name="Online Advertisement"><br>
+            </div>
+            <!-- </select> <br> <br> -->
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Expectations for the conference"></textarea>
+            <br>
 
             <button type="submit">Submit</button>
         </form>
