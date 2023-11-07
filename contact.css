@@ -1,39 +1,71 @@
-.contact-text h1{
+.contact-text h1 {
     font-size: 30px;
     font-family: 'poppins' sans-serif;
     font-weight: 600;
 }
-form input{
+
+form input {
     outline: none;
-    border: none;
     background-color: transparent;
-    border-bottom: 1px solid #000;
     width: 500px;
+    margin-top: 5px;
+    padding: 0.7rem 100px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 10px;
+    border: 0.5px solid rgba(59, 38, 14, 0.09);
+    /* background-color: #ffffff; */
+    box-shadow: inset -5px -5px 12px #ffffff,
+        inset 5px 5px 12px rgba(0, 0, 0, 0.067);
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.062);
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 15px;
     color: #000000a7;
 }
-input::selection{
+
+input::selection {
     background-color: #000;
     color: #fff;
 }
-form textarea{
+
+form textarea {
     width: 500px;
     background-color: transparent;
     outline: none;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 12px #ffffff,
+        inset 5px 5px 12px rgba(0, 0, 0, 0.067);
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.062);
+    padding: 20px 100px;
+    line-height: 1.23536;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 6px 0px;
+    text-overflow: ellipsis;
+    border: 0.5px solid rgba(59, 38, 14, 0.09);
 }
-textarea::placeholder{
-    padding-left: 20px;
-    padding-top: 20px;
+
+textarea::placeholder {
     font-size: 15px;
     resize: unset;
+    color: #000000ab;
 }
-form button{
-    padding: 10px 25px;
+
+form button {
     background-color: #D19B43;
-    outline: none;
+    min-width: 3.25rem;
+    padding: 1em 3.25em;
+    text-align: center;
+    border-radius: 30px;
+    transition: all .45s;
+    box-shadow: none;
     border: none;
-    color: #fff;
-    cursor: pointer;
+    margin-top: 20px;
+    color: #ffffff;
 }
